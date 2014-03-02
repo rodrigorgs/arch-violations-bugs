@@ -1,0 +1,17 @@
+violfile,gitrepo
+org.eclipse.ant.core-lifecycle,eclipse.platform
+org.eclipse.ant.ui-lifecycle,eclipse.platform
+org.eclipse.compare-lifecycle,eclipse.platform.team
+org.eclipse.core.jobs-lifecycle,eclipse.platform.runtime
+org.eclipse.help.ui-lifecycle,eclipse.platform.ua
+org.eclipse.jdt.debug.ui-lifecycle,eclipse.jdt.debug
+org.eclipse.jdt.ui-lifecycle,eclipse.jdt.ui
+org.eclipse.jface-lifecycle,eclipse.platform.ui
+org.eclipse.ltk.ui.refactoring-lifecycle,eclipse.jdt.ui
+org.eclipse.pde.ui-lifecycle,eclipse.pde.ui
+org.eclipse.swt-lifecycle,eclipse.swt
+org.eclipse.team.cvs.ui-lifecycle,eclipse.platform.team
+org.eclipse.team.ui-lifecycle,eclipse.platform.team
+org.eclipse.ui.externaltools-lifecycle,eclipse.platform
+org.eclipse.ui.ide-lifecycle,eclipse.platform.ui
+org.eclipse.ui.workbench-lifecycle,eclipse.platform.ui

@@ -1,0 +1,519 @@
+org.eclipse.ant.core.Task extends non-API type org.eclipse.ant.internal.core.AntObject*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ant.core.Type extends non-API type org.eclipse.ant.internal.core.AntObject*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ant.internal.ui.launchConfigurations.AntEnvironmentTab illegally extends org.eclipse.debug.ui.EnvironmentTab*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ant.internal.ui.editor.AntEditor.StatusLineSourceViewer illegally extends org.eclipse.jface.text.source.projection.ProjectionViewer*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ant.internal.ui.editor.actions.OpenDeclarationAction illegally extends org.eclipse.jdt.ui.actions.OpenAction*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.ant.internal.ui.launchConfigurations.AntJRETab illegally extends org.eclipse.jdt.debug.ui.launchConfigurations.JavaJRETab*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ant.internal.ui.editor.text.AntAnnotationModel illegally extends org.eclipse.ui.texteditor.ResourceMarkerAnnotationModel*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ant.internal.ui.launchConfigurations.AntClasspathTab illegally extends org.eclipse.jdt.debug.ui.launchConfigurations.JavaClasspathTab*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ant.internal.ui.editor.AntEditor$StatusLineSourceViewer illegally extends org.eclipse.jface.text.source.projection.ProjectionViewer*1 2 3
+org.eclipse.ant.internal.ui.preferences.MessageLine illegally extends org.eclipse.swt.custom.CLabel*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.ant.internal.ui.editor.actions.RenameInFileAction illegally extends org.eclipse.jdt.ui.actions.SelectionDispatchAction*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.compare.structuremergeviewer.DiffTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.compare.contentmergeviewer.TextMergeViewer illegally references method org.eclipse.swt.widgets.TypedListener.getEventListener()*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.compare.CompareViewerPane illegally extends org.eclipse.swt.custom.ViewForm*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.compare.contentmergeviewer.TextMergeViewer$26 illegally extends org.eclipse.ui.texteditor.ChangeEncodingAction*3
+org.eclipse.compare.contentmergeviewer.TextMergeViewer$37 illegally implements org.eclipse.ui.IWorkbenchPartSite*3
+org.eclipse.compare.EditionSelectionDialog extends non-API type org.eclipse.compare.internal.ResizableDialog*1 2 3
+An anonymous type defined in org.eclipse.compare.CompareViewerPane.createTopLeft(Composite) illegally extends CLabel*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.compare.contentmergeviewer.ContentMergeViewer implements non-API interface org.eclipse.compare.internal.IFlushable2*10 11 12 13 14 15 16 17 18 19
+org.eclipse.core.runtime.jobs.Job extends non-API type org.eclipse.core.internal.jobs.InternalJob*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.help.ui.internal.HyperlinkLabel illegally references constructor org.eclipse.swt.widgets.TypedListener*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.help.ui.internal.ContextHelpDialog.Description illegally extends org.eclipse.swt.custom.StyledText*7 8 9 10 11 12 13 14 15 16 17 18
+An anonymous type defined in org.eclipse.help.ui.internal.HelpUIEvaluationContext.getContext() illegally extends EvaluationContext*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.help.ui.internal.HelpUIEvaluationContext$1 illegally extends org.eclipse.core.expressions.EvaluationContext*1 2 3
+The minor version should be incremented in version 3.3.100.v20080521, because reexported bundle org.eclipse.ui has changed its minor version*1
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaConnectTab extends non-API type org.eclipse.jdt.internal.debug.ui.launcher.AbstractJavaMainTab*1 2 3
+org.eclipse.jdt.internal.debug.ui.classpath.ClasspathEntry illegally implements org.eclipse.jdt.launching.IRuntimeClasspathEntry*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaJRETab.getSpecificJREDescriptor() has non-API return type org.eclipse.jdt.internal.debug.ui.jres.JREDescriptor*1 2 3
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaClasspathTab.getModel() has non-API return type org.eclipse.jdt.internal.debug.ui.classpath.ClasspathModel*1 2 3
+An anonymous type defined in org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction.showPopup(StyledText) illegally extends InspectPopupDialog*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jdt.internal.debug.ui.MessageLine illegally extends org.eclipse.swt.custom.CLabel*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.debug.ui.launcher.AppletSelectionDialog.PackageRenderer illegally extends org.eclipse.jdt.ui.JavaElementLabelProvider*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaMainTab extends non-API type org.eclipse.jdt.internal.debug.ui.launcher.SharedJavaMainTab*1 2 3
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaClasspathTab.createButton(Composite, RuntimeClasspathAction) has non-API parameter type org.eclipse.jdt.internal.debug.ui.actions.RuntimeClasspathAction*1 2 3
+org.eclipse.jdt.internal.debug.ui.launcher.RuntimeClasspathViewer illegally extends org.eclipse.jface.viewers.TableViewer*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jdt.debug.ui.launchConfigurations.AppletArgumentsTab.createWorkingDirBlock() has non-API return type org.eclipse.jdt.internal.debug.ui.launcher.WorkingDirectoryBlock*1 2 3
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaJRETab.getDefaultJREDescriptor() has non-API return type org.eclipse.jdt.internal.debug.ui.jres.JREDescriptor*1 2 3
+org.eclipse.jdt.internal.debug.ui.launcher.AppletSelectionDialog$PackageRenderer illegally extends org.eclipse.jdt.ui.JavaElementLabelProvider*1 2 3
+org.eclipse.jdt.internal.debug.ui.snippeteditor.SnippetOpenHierarchyOnSelectionAction illegally extends org.eclipse.jdt.ui.actions.OpenTypeHierarchyAction*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaArgumentsTab.createWorkingDirBlock() has non-API return type org.eclipse.jdt.internal.debug.ui.launcher.WorkingDirectoryBlock*1 2 3
+org.eclipse.jdt.internal.debug.ui.snippeteditor.SnippetEditorPropertyPage$Proxy illegally implements org.eclipse.debug.ui.ILaunchConfigurationDialog*1 2 3
+org.eclipse.jdt.debug.ui.launchConfigurations.AppletMainTab extends non-API type org.eclipse.jdt.internal.debug.ui.launcher.SharedJavaMainTab*1 2 3
+org.eclipse.jdt.internal.debug.ui.display.DisplayViewerConfiguration illegally extends org.eclipse.jdt.ui.text.JavaSourceViewerConfiguration*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.debug.ui.snippeteditor.JavaSnippetViewerConfiguration illegally extends org.eclipse.jdt.ui.text.JavaSourceViewerConfiguration*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jdt.internal.debug.ui.snippeteditor.SnippetEditorPropertyPage.Proxy illegally implements org.eclipse.debug.ui.ILaunchConfigurationDialog*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jdt.internal.debug.ui.classpath.RuntimeClasspathViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaClasspathTab extends non-API type org.eclipse.jdt.internal.debug.ui.launcher.AbstractJavaClasspathTab*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.debug.ui.launchConfigurations.JavaArgumentsTab.createVMArgsBlock() has non-API return type org.eclipse.jdt.internal.debug.ui.launcher.VMArgumentsBlock*1 2 3
+org.eclipse.jdt.internal.debug.ui.snippeteditor.SnippetOpenOnSelectionAction illegally extends org.eclipse.jdt.ui.actions.OpenAction*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2 illegally extends org.eclipse.debug.ui.InspectPopupDialog*1 2 3
+org.eclipse.jdt.internal.ui.wizards.buildpaths.FolderSelectionDialog$2 illegally extends org.eclipse.ui.dialogs.NewFolderDialog*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.ClassFileMarkerRulerAction illegally extends org.eclipse.ui.texteditor.MarkerRulerAction*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.scripting.PullUpRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.MoveRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.ui.compare.JavaStructureDiffViewer illegally extends org.eclipse.compare.structuremergeviewer.StructureDiffViewer*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jdt.internal.ui.javaeditor.AddClassFileMarkerAction illegally extends org.eclipse.ui.texteditor.AddMarkerAction*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.scripting.InferTypeArgumentsRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.ui.actions.SelfEncapsulateFieldAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.InlineMethodRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.InlineMethodDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.InlineTempRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.InlineLocalVariableDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.MoveStaticMembersProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveStaticMembersDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.PushDownRefactoringProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.PushDownDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.ModifyParametersAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameTypeRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.JavaSelectAnnotationRulerAction illegally extends org.eclipse.ui.texteditor.SelectMarkerRulerAction*1 2 3
+org.eclipse.jdt.internal.ui.viewsupport.ProblemTableViewer illegally extends org.eclipse.jface.viewers.TableViewer*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.code.IntroduceFactoryRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceFactoryDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.MoveMethodRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveMethodDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.ExtractInterfaceProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractInterfaceDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameLocalVariableRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.ExtractConstantAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.ui.actions.SelectionDispatchAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.ExtractMethodRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractMethodDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.CopyRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.CopyDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.InlineTempRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.InlineLocalVariableDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.packageview.LayoutAction illegally implements org.eclipse.jface.action.IAction*1 2 3
+org.eclipse.jdt.ui.actions.FindImplementOccurrencesAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.PromoteTempToFieldRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ConvertLocalVariableDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameJavaProjectRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.ExtractClassContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractClassDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.UseSupertypeRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.UseSupertypeDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.IntroduceParameterObjectContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceParameterObjectDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.ChangeTypeRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.GeneralizeTypeDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameJavaProjectRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.UseSuperTypeProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.UseSupertypeDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.InlineMethodRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.InlineConstantRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.InlineConstantDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$CopyFilesFoldersAndCusPolicy illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.CopyDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.ReplaceInvocationsRefactoring$2 illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.MoveMemberTypeRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ConvertMemberTypeDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.util.ViewerPane illegally extends org.eclipse.swt.custom.ViewForm*7 8 9 10 11 12 13 14 15 16 17 18
+An anonymous type defined in org.eclipse.jdt.internal.ui.refactoring.nls.ExternalizeWizardPage.createTableViewer(Composite) illegally extends TableViewer*10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.code.IntroduceParameterRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceParameterDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ChangeTypeRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameLocalVariableRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.DeleteRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.ui.viewsupport.ProblemTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.nls.NLSScanner illegally instantiates org.eclipse.jdt.core.compiler.InvalidInputException*1 2 3
+org.eclipse.jdt.ui.actions.IntroduceParameterAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.MoveStaticMembersRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveStaticMembersDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.ui.actions.ExtractTempAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.JavaOutlinePage.JavaOutlineViewer illegally extends org.eclipse.jface.viewers.TreeViewer*10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameMethodRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.ConvertAnonymousToNestedAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameTypeParameterRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.InlineConstantRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.InlineConstantDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractTempRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractLocalDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameMethodProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameTypeParameterProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.callhierarchy.CallHierarchyViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.ExtractClassContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractSupertypeRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractSuperclassDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.PullUpRefactoringProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.PullUpDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ConvertAnonymousRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.MoveStaticMembersRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider$CompilationUnitAnnotationModel illegally extends org.eclipse.ui.texteditor.ResourceMarkerAnnotationModel*1 2 3
+org.eclipse.jdt.ui.actions.IntroduceIndirectionAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.InlineTempRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractInterfaceRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractMethodRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.sef.SelfEncapsulateFieldRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.EncapsulateFieldDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.CompatibilityTemplateStore illegally extends org.eclipse.ui.editors.text.templates.ContributionTemplateStore*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameSourceFolderRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameCompilationUnitProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.MoveInstanceMethodProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveMethodDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.DocumentAdapter illegally instantiates org.eclipse.jdt.core.BufferChangedEvent*1 2 3 4 5 6
+org.eclipse.jdt.internal.corext.refactoring.scripting.PromoteTempToFieldRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.PromoteTempToFieldRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ConvertLocalVariableDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractSupertypeRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.MoveRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ChangeMethodSignatureRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ChangeMethodSignatureDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$MoveFilesFoldersAndCusPolicy illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveDescriptor*1 2 3
+An anonymous type defined in org.eclipse.jdt.internal.corext.refactoring.code.ReplaceInvocationsRefactoring.createChange(IProgressMonitor) illegally extends JavaRefactoringDescriptor*10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.ui.navigator.OpenAndExpand illegally implements org.eclipse.jface.action.IAction*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer illegally extends org.eclipse.jface.text.source.projection.ProjectionViewer*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jdt.internal.corext.refactoring.structure.ChangeSignatureProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ChangeMethodSignatureDescriptor*1 2 3 4 5 6
+org.eclipse.jdt.internal.corext.refactoring.scripting.ConvertAnonymousRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ConvertAnonymousDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.IJavaEditorActionDefinitionIds illegally implements org.eclipse.ui.texteditor.ITextEditorActionDefinitionIds*1 2 3
+org.eclipse.jdt.internal.ui.navigator.CommonLayoutActionGroup$CommonLayoutAction illegally implements org.eclipse.jface.action.IAction*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.IntroduceIndirectionRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceIndirectionDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.ExternalClassFileEditorInput illegally extends org.eclipse.ui.part.FileEditorInput*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameTypeProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenamePackageRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractConstantRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.PushDownRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.PushDownDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.IntroduceParameterRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ChangeTypeRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.GeneralizeTypeDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.InlineMethodRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.InlineMethodDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.JavaOutlinePage$JavaOutlineViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3
+org.eclipse.jdt.ui.actions.IntroduceFactoryAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.ConvertAnonymousToNestedRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ConvertAnonymousDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractConstantRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractConstantDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameCompilationUnitRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameFieldRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$MovePackageFragmentRootsPolicy illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.packageview.ShowLibrariesNodeAction illegally implements org.eclipse.jface.action.IAction*1 2 3
+org.eclipse.jdt.internal.corext.SourceRange illegally implements org.eclipse.jdt.core.ISourceRange*1 2 3 4 5 6 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.ui.actions.ExtractMethodAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameEnumConstRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.ExtractSupertypeProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractSuperclassDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.MoveMemberTypeRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameSourceFolderProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.reorg.JavaDeleteProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.DeleteDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractMethodRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractMethodDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractInterfaceRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractInterfaceDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameTypeRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.FindOccurrencesInFileAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameTypeParameterRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameCompilationUnitRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.IntroduceIndirectionRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceIndirectionDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.IntroduceFactoryRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.RefactoringExecutionStarter illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractClassDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.ReplaceInvocationsAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.DeleteRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.DeleteDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$CopyPackagesPolicy illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.CopyDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.ExtractInterfaceAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameEnumConstProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.InlineConstantRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.ui.actions.ExtractClassAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.IntroduceParameterObjectContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.ui.actions.PushDownAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.SelfEncapsulateRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.EncapsulateFieldDescriptor*1 2 3
+org.eclipse.jdt.ui.actions.InferTypeArgumentsAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControl.OutlineTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.ui.actions.IJavaEditorActionDefinitionIds illegally extends org.eclipse.ui.texteditor.ITextEditorActionDefinitionIds*10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.ui.actions.UseSupertypeAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.ui.callhierarchy.LocationViewer illegally extends org.eclipse.jface.viewers.TableViewer*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$CopySubCuElementsPolicy illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.CopyDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.IntroduceIndirectionRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameSourceFolderRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.UseSupertypeRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.ui.actions.ConvertNestedToTopAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.IntroduceFactoryRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceFactoryDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.text.java.ParameterGuessingProposal illegally instantiates org.eclipse.jface.text.link.InclusivePositionUpdater*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$CopyPackageFragmentRootsPolicy illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.CopyDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControl$OutlineTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.CopyRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenamePackageRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.PullUpRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.PullUpDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.ExtractConstantRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractConstantDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.CompilationUnitAnnotationModel illegally extends org.eclipse.ui.texteditor.ResourceMarkerAnnotationModel*10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.ui.actions.FindBreakContinueTargetOccurrencesAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ChangeMethodSignatureRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.ui.actions.FindExceptionOccurrencesAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.MoveMethodRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.IntroduceParameterObjectProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceParameterObjectDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.IntroduceParameterRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceParameterDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.SelfEncapsulateRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.ui.actions.InlineTempAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.ui.actions.PullUpAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$MoveSubCuElementsPolicy illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.ExtractTempRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameLocalVariableProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameEnumConstRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameFieldRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.generics.InferTypeArgumentsRefactoring$3 illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.InferTypeArgumentsDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.PushDownRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.ui.actions.FindMethodExitOccurrencesAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.JavaUIRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.reorg.ReorgPolicyFactory$MovePackagesPolicy illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.MoveDescriptor*1 2 3
+org.eclipse.jdt.internal.ui.refactoring.nls.ExternalizeWizardPage$2 illegally extends org.eclipse.jface.viewers.TableViewer*1 2 3
+org.eclipse.jdt.internal.ui.refactoring.PullPushCheckboxTableViewer illegally extends org.eclipse.jface.viewers.CheckboxTableViewer*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.jdt.internal.corext.refactoring.scripting.RenameMethodRefactoringContribution illegally extends org.eclipse.jdt.core.refactoring.descriptors.JavaRefactoringContribution*1 2 3
+org.eclipse.jdt.ui.actions.ConvertLocalToFieldAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.ui.actions.ChangeTypeAction.selectionChanged(JavaTextSelection) has non-API parameter type org.eclipse.jdt.internal.ui.javaeditor.JavaTextSelection*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenamePackageProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.RefactoringExecutionStarter illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.IntroduceParameterObjectDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.structure.MoveInnerToTopRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ConvertMemberTypeDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameFieldProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.scripting.InferTypeArgumentsRefactoringContribution illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.InferTypeArgumentsDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.code.ExtractTempRefactoring illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.ExtractLocalDescriptor*1 2 3
+org.eclipse.jdt.internal.corext.refactoring.rename.RenameJavaProjectProcessor illegally instantiates org.eclipse.jdt.core.refactoring.descriptors.RenameJavaElementDescriptor*1 2 3
+org.eclipse.jface.action.ToolBarContributionItem implements non-API interface org.eclipse.jface.internal.provisional.action.IToolBarContributionItem*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.jface.dialogs.StatusDialog.MessageLine illegally extends org.eclipse.swt.custom.CLabel*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.internal.ui.refactoring.model.RefactoringHistoryDiff illegally implements org.eclipse.team.core.diff.IThreeWayDiff*1 2 3 10 11 12 13 14 15 16 17 18
+Constructor for org.eclipse.ltk.ui.refactoring.TextEditChangeNode.ChildNode with non-API parameter type org.eclipse.ltk.internal.ui.refactoring.PreviewNode*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ltk.internal.ui.refactoring.history.RefactoringHistoryControl$RefactoringHistoryTreeViewer illegally extends org.eclipse.jface.viewers.CheckboxTreeViewer*1 2 3
+org.eclipse.ltk.internal.ui.refactoring.history.RefactoringHistoryControl.RefactoringHistoryTreeViewer illegally extends org.eclipse.jface.viewers.CheckboxTreeViewer*10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.ui.refactoring.TextEditChangeNode extends non-API type org.eclipse.ltk.internal.ui.refactoring.InternalTextEditChangeNode*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ltk.internal.ui.refactoring.RefactoringUIPlugin illegally references method org.eclipse.ltk.core.refactoring.RefactoringCore.internalSetQueryFactory(IValidationCheckResultQueryFactory)*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.internal.ui.refactoring.model.RefactoringDescriptorSynchronizationProxy illegally extends org.eclipse.ltk.core.refactoring.RefactoringDescriptorProxy*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.internal.ui.refactoring.history.RefactoringHistoryControl.RefactoringHistoryLabel illegally extends org.eclipse.swt.custom.CLabel*8 9 7
+org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation illegally extends org.eclipse.ltk.core.refactoring.PerformChangeOperation*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.internal.ui.refactoring.util.ViewerPane illegally extends org.eclipse.swt.custom.ViewForm*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.ui.refactoring.UndoRefactoringAction extends non-API type org.eclipse.ltk.internal.ui.refactoring.UndoManagerAction*1 2 3
+org.eclipse.ltk.ui.refactoring.history.RefactoringHistoryWizard$10 illegally extends org.eclipse.ltk.core.refactoring.PerformRefactoringHistoryOperation*1 2 3
+An anonymous type defined in org.eclipse.ltk.ui.refactoring.history.RefactoringHistoryWizard.performFinish() illegally extends PerformRefactoringHistoryOperation*10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.internal.ui.refactoring.model.RefactoringDescriptorDiff illegally implements org.eclipse.team.core.diff.IThreeWayDiff*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.ui.refactoring.TextEditChangeNode$ChildNode extends non-API type org.eclipse.ltk.internal.ui.refactoring.PreviewNode*1 2 3
+org.eclipse.ltk.ui.refactoring.TextEditChangeNode.ChildNode extends non-API type org.eclipse.ltk.internal.ui.refactoring.PreviewNode*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ltk.internal.ui.refactoring.ChangeElementTreeViewer illegally extends org.eclipse.jface.viewers.CheckboxTreeViewer*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.ltk.ui.refactoring.LanguageElementNode extends non-API type org.eclipse.ltk.internal.ui.refactoring.InternalLanguageElementNode*1 2 3
+Constructor for org.eclipse.ltk.ui.refactoring.TextEditChangeNode$ChildNode with non-API parameter type org.eclipse.ltk.internal.ui.refactoring.PreviewNode*1 2 3
+org.eclipse.ltk.ui.refactoring.RedoRefactoringAction extends non-API type org.eclipse.ltk.internal.ui.refactoring.UndoManagerAction*1 2 3
+org.eclipse.pde.ui.launcher.IPDELauncherConstants illegally extends org.eclipse.pde.launching.IPDELauncherConstants*7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.launcher.FilteredCheckboxTree.FilterableCheckboxTreeViewer illegally extends org.eclipse.jface.viewers.CheckboxTreeViewer*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.ctxhelp.NewCtxHelpWizard illegally extends org.eclipse.ui.wizards.newresource.BasicNewFileResourceWizard*1 2 3
+org.eclipse.pde.ui.templates.NewPluginProjectFromTemplateWizard extends non-API type org.eclipse.pde.internal.ui.wizards.NewWizard*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.compare.PluginStructureViewer illegally extends org.eclipse.compare.structuremergeviewer.StructureDiffViewer*1 2 3
+org.eclipse.pde.internal.ui.editor.site.SiteFeatureAdapter illegally implements org.eclipse.pde.core.IWritable*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.launcher.FilteredCheckboxTree$FilterableCheckboxTreeViewer illegally extends org.eclipse.jface.viewers.CheckboxTreeViewer*1 2 3
+org.eclipse.pde.internal.ui.search.dialogs.FilteredIUSelectionDialog illegally references method org.eclipse.equinox.p2.metadata.IProvidedCapability.getVersion()*7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.search.dialogs.FilteredIUSelectionDialog illegally references method org.eclipse.equinox.p2.metadata.IProvidedCapability.getName()*7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.parts.MessageLine illegally extends org.eclipse.swt.custom.CLabel*7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.pde.internal.ui.editor.category.SiteBundleAdapter illegally implements org.eclipse.pde.core.IWritable*19
+org.eclipse.pde.internal.ui.wizards.exports.ExportTargetJob illegally references method org.eclipse.equinox.p2.metadata.IProvidedCapability.getName()*10 11 12
+org.eclipse.pde.internal.ui.refactoring.RenamePluginProcessor illegally instantiates org.eclipse.ltk.core.refactoring.resource.RenameResourceDescriptor*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.editor.plugin.JavaAttributeWizardPage illegally extends org.eclipse.jdt.ui.wizards.NewClassWizardPage*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.target.NewTargetDefinitionWizard illegally extends org.eclipse.ui.wizards.newresource.BasicNewResourceWizard*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.product.NewProductFileWizard illegally extends org.eclipse.ui.wizards.newresource.BasicNewResourceWizard*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.ui.launcher.MainTab illegally implements org.eclipse.pde.launching.IPDELauncherConstants via org.eclipse.pde.ui.launcher.IPDELauncherConstants*19
+org.eclipse.pde.internal.ui.shared.target.UpdateTargetJob illegally references method org.eclipse.pde.core.target.ITargetLocation.getLocation(boolean)*13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.toc.TocHTMLWizard illegally extends org.eclipse.ui.wizards.newresource.BasicNewFileResourceWizard*1 2 3
+org.eclipse.pde.internal.ui.editor.text.PDESelectAnnotationRulerAction illegally extends org.eclipse.ui.texteditor.SelectMarkerRulerAction*1 2 3
+org.eclipse.pde.internal.ui.wizards.exports.ExportTargetJob illegally references method org.eclipse.equinox.p2.metadata.IProvidedCapability.getNamespace()*10 11 12
+org.eclipse.pde.internal.ui.editor.text.PDEMarkerAnnotationModel illegally extends org.eclipse.ui.texteditor.ResourceMarkerAnnotationModel*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.cheatsheet.NewCSFileWizard illegally extends org.eclipse.ui.wizards.newresource.BasicNewFileResourceWizard*1 2 3
+org.eclipse.pde.ui.launcher.ConfigurationTab illegally implements org.eclipse.pde.launching.IPDELauncherConstants via org.eclipse.pde.ui.launcher.IPDELauncherConstants*7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.editor.IContextPart illegally extends org.eclipse.pde.core.IModelChangedListener*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.editor.category.SiteFeatureAdapter illegally implements org.eclipse.pde.core.IWritable*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.imports.PluginImportWizardFirstPage illegally references method org.eclipse.team.core.Team.getBundleImporters()*13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.editor.PDEProjectionViewer illegally extends org.eclipse.jface.text.source.projection.ProjectionViewer*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.editor.plugin.PluginInputContextManager illegally instantiates org.eclipse.pde.core.ModelChangedEvent*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.editor.EmptyOutlinePage illegally implements org.eclipse.ui.part.IPage via org.eclipse.pde.internal.ui.editor.ISortableContentOutlinePage*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.search.dialogs.FilteredIUSelectionDialog illegally references method org.eclipse.equinox.p2.metadata.IProvidedCapability.getNamespace()*7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.target.MoveTargetDefinitionWizard illegally extends org.eclipse.ui.wizards.newresource.BasicNewResourceWizard*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.imports.PluginImportWizardFirstPage illegally references method org.eclipse.team.ui.TeamUI.getPages(String)*13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.wizards.imports.RepositoryImportWizard illegally references method org.eclipse.team.ui.TeamUI.getPages(String)*13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.search.dependencies.DependencyExtentSearchResultPage.LabelProvider illegally extends org.eclipse.jdt.ui.JavaElementLabelProvider*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.pde.internal.ui.search.dependencies.DependencyExtentSearchResultPage$LabelProvider illegally extends org.eclipse.jdt.ui.JavaElementLabelProvider*1 2 3
+org.eclipse.pde.ui.templates.PluginReference illegally implements org.eclipse.pde.core.plugin.IPluginReference*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.events.VerifyListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The method java.awt.Frame.getGraphicsConfiguration() referenced in org.eclipse.swt.awt.SWT_AWT.1.run() is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.DisposeListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.ShellListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The method org.eclipse.swt.graphics.Device.internal_new_GC(GCData) that has to be implemented has been added*19
+org.eclipse.swt.accessibility.AccessibleTableCellListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+Constructor for org.eclipse.swt.widgets.TypedListener with non-API parameter type org.eclipse.swt.internal.SWTEventListener*1 2 3 4 5 6 19
+org.eclipse.swt.accessibility.AccessibleEditableTextListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+The method java.awt.Canvas.removeComponentListener(ComponentListener) referenced in org.eclipse.swt.awt.SWT_AWT.13.handleEvent(Event) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleActionListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.LineStyleListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.browser.TitleListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleTableListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.MouseWheelListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.ArmListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.SelectionListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.MenuListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.CTabFolderListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.ControlListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The method java.awt.Canvas.addComponentListener(ComponentListener) referenced in org.eclipse.swt.awt.SWT_AWT.new_Shell(Display, Canvas) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.browser.StatusTextListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.ExtendedModifyListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.widgets.Widget.removeListener(int, SWTEventListener) has non-API parameter type org.eclipse.swt.internal.SWTEventListener*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleAutomation.getTypeInfoAttributes() has non-API return type org.eclipse.swt.internal.ole.win32.TYPEATTR*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+Constructor for org.eclipse.swt.ole.win32.Variant with non-API parameter type org.eclipse.swt.internal.ole.win32.IUnknown*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.graphics.Rectangle implements non-API interface org.eclipse.swt.internal.SerializableCompatibility*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.Variant.getUnknown() has non-API return type org.eclipse.swt.internal.ole.win32.IUnknown*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.custom.CaretListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleTextListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.CTabFolder2Listener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The constructor java.awt.event.ComponentAdapter() referenced in org.eclipse.swt.awt.SWT_AWT.11.(Display, Shell, Canvas) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.browser.LocationListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleClientSite.tempStorage declared as non-API type org.eclipse.swt.internal.ole.win32.IStorage*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.events.KeyListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.ExpandListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleControlListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.VerifyKeyListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.TypedEvent extends non-API type org.eclipse.swt.internal.SWTEventObject*1 2 3
+org.eclipse.swt.events.ModifyListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.LineBackgroundListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.Variant.getDispatch() has non-API return type org.eclipse.swt.internal.ole.win32.IDispatch*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.accessibility.AccessibleTextEvent extends non-API type org.eclipse.swt.internal.SWTEventObject*1 2 3
+org.eclipse.swt.browser.OpenWindowListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The type java.awt.event.ComponentListener referenced in org.eclipse.swt.awt.SWT_AWT.new_Shell(Display, Canvas) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+The type java.awt.Canvas referenced in org.eclipse.swt.awt.SWT_AWT.getAWTHandle(Canvas) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+The visibility of the method org.eclipse.swt.ole.win32.OleControlSite.OnUIDeactivate(int) has been reduced*3
+Constructor for org.eclipse.swt.ole.win32.Variant with non-API parameter type org.eclipse.swt.internal.ole.win32.IDispatch*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.ole.win32.OleClientSite.objIOleInPlaceObject declared as non-API type org.eclipse.swt.internal.ole.win32.IOleInPlaceObject*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.accessibility.AccessibleListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleControlSite.getLicenseInfo(GUID) has non-API parameter type org.eclipse.swt.internal.ole.win32.GUID*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The method org.eclipse.swt.graphics.Device.internal_dispose_GC(int, GCData) that has to be implemented has been added*19
+org.eclipse.swt.ole.win32.OleClientSite.getClassID(String) has non-API return type org.eclipse.swt.internal.ole.win32.GUID*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The method java.awt.EventQueue.invokeLater(Runnable) referenced in org.eclipse.swt.awt.SWT_AWT.2.handleEvent(Event) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleValueListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleEvent extends non-API type org.eclipse.swt.internal.SWTEventObject*1 2 3
+org.eclipse.swt.browser.AuthenticationListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.FocusListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.BidiSegmentListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The type java.awt.Frame referenced in org.eclipse.swt.awt.SWT_AWT.new_Frame(Composite) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.GestureListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+The method java.awt.EventQueue.isDispatchThread() referenced in org.eclipse.swt.awt.SWT_AWT.new_Frame(Composite) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.MouseTrackListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleClientSite.objIViewObject2 declared as non-API type org.eclipse.swt.internal.ole.win32.IViewObject2*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The type java.awt.Frame referenced in org.eclipse.swt.awt.SWT_AWT.getFrame(Composite) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.graphics.FontMetrics.win32_new(TEXTMETRIC) has non-API parameter type org.eclipse.swt.internal.win32.TEXTMETRIC*1 2 3 4 5 6 19
+org.eclipse.swt.graphics.FontMetrics.handle declared as non-API type org.eclipse.swt.internal.win32.TEXTMETRIC*1 2 3 4 5 6 19
+org.eclipse.swt.events.SegmentListener extends non-API type org.eclipse.swt.internal.SWTEventListener*13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleAttributeListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleControlSite.removeEventListener(OleAutomation, GUID, int, OleListener) has non-API parameter type org.eclipse.swt.internal.ole.win32.GUID*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The type java.awt.Frame referenced in org.eclipse.swt.awt.SWT_AWT.2.(Frame) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.PaintListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The type java.awt.Frame referenced in org.eclipse.swt.awt.SWT_AWT.9.(Composite, Frame) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+The method org.eclipse.swt.graphics.Drawable.internal_new_GC(GCData) in an interface that is intended to be implemented has been added*19
+The method org.eclipse.swt.graphics.Drawable.internal_dispose_GC(int, GCData) in an interface that is intended to be implemented has been added*19
+The method java.awt.EventQueue.invokeLater(Runnable) referenced in org.eclipse.swt.awt.SWT_AWT.new_Frame(Composite) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.graphics.ImageLoaderEvent extends non-API type org.eclipse.swt.internal.SWTEventObject*1 2 3
+org.eclipse.swt.widgets.Display.msg declared as non-API type org.eclipse.swt.internal.win32.MSG*1 2 3 4 5 6 19
+The method java.awt.Toolkit.getDefaultToolkit() referenced in org.eclipse.swt.awt.SWT_AWT.loadLibrary() is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+The method java.awt.Frame.addNotify() referenced in org.eclipse.swt.awt.SWT_AWT.1.run() is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+The method java.awt.EventQueue.invokeLater(Runnable) referenced in org.eclipse.swt.awt.SWT_AWT.5.handleEvent(Event) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleControlEvent extends non-API type org.eclipse.swt.internal.SWTEventObject*1 2 3
+org.eclipse.swt.events.TouchListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleClientSite.objDocumentView declared as non-API type org.eclipse.swt.internal.ole.win32.IOleDocumentView*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.graphics.FontData.data declared as non-API type org.eclipse.swt.internal.win32.LOGFONT*1 2 3 4 5 6 19
+org.eclipse.swt.custom.TextChangeListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.accessibility.AccessibleHyperlinkListener extends non-API type org.eclipse.swt.internal.SWTEventListener*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.StyleRange implements non-API interface org.eclipse.swt.internal.CloneableCompatibility*1 2 3 10 11 12 13 14 15 16 17 18
+The method java.awt.EventQueue.invokeLater(Runnable) referenced in org.eclipse.swt.awt.SWT_AWT.9.run() is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+The type java.awt.Canvas referenced in org.eclipse.swt.awt.SWT_AWT.13.(Canvas, ComponentListener) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.dnd.TransferData.stgmedium declared as non-API type org.eclipse.swt.internal.ole.win32.STGMEDIUM*1 2 3 4 5 6 19
+org.eclipse.swt.browser.CloseWindowListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.PaintObjectListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.widgets.TypedListener.getEventListener() has non-API return type org.eclipse.swt.internal.SWTEventListener*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+The method java.awt.Frame.getPeer() referenced in org.eclipse.swt.awt.SWT_AWT.1.run() is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.dnd.DropTargetListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.custom.MovementListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleClientSite.objIOleCommandTarget declared as non-API type org.eclipse.swt.internal.ole.win32.IOleCommandTarget*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.ole.win32.OleClientSite.createTempStorage() has non-API return type org.eclipse.swt.internal.ole.win32.IStorage*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.events.MenuDetectListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.dnd.TransferData.formatetc declared as non-API type org.eclipse.swt.internal.ole.win32.FORMATETC*1 2 3 4 5 6 19
+The type java.awt.Frame referenced in org.eclipse.swt.awt.SWT_AWT.1.(Frame[], Throwable[], int) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.MouseMoveListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.graphics.GCData.ps declared as non-API type org.eclipse.swt.internal.win32.PAINTSTRUCT*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.graphics.ImageData implements non-API interface org.eclipse.swt.internal.CloneableCompatibility*1 2 3 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.graphics.ImageLoaderListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleClientSite.objIOleObject declared as non-API type org.eclipse.swt.internal.ole.win32.IOleObject*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.events.DragDetectListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The type java.awt.event.ComponentListener referenced in org.eclipse.swt.awt.SWT_AWT.13.(Canvas, ComponentListener) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.HelpListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The type java.awt.Frame referenced in org.eclipse.swt.awt.SWT_AWT.1.run() is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+The type java.awt.Canvas referenced in org.eclipse.swt.awt.SWT_AWT.new_Shell(Display, Canvas) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.widgets.TypedListener.eventListener declared as non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleClientSite.objIUnknown declared as non-API type org.eclipse.swt.internal.ole.win32.IUnknown*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.swt.dnd.DragSourceListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.graphics.Point implements non-API interface org.eclipse.swt.internal.SerializableCompatibility*1 2 3 10 11 12 13 14 15 16 17 18
+The type java.awt.Frame referenced in org.eclipse.swt.awt.SWT_AWT.5.(Composite, Listener, Frame) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.graphics.FontData.win32_new(LOGFONT, float) has non-API parameter type org.eclipse.swt.internal.win32.LOGFONT*1 2 3 4 5 6 19
+org.eclipse.swt.graphics.RGB implements non-API interface org.eclipse.swt.internal.SerializableCompatibility*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.browser.ProgressListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+The type java.awt.event.ComponentEvent referenced in org.eclipse.swt.awt.SWT_AWT.11.componentResized(ComponentEvent) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.browser.VisibilityWindowListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.MouseListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.TreeListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.swt.ole.win32.OleClientSite.appClsid declared as non-API type org.eclipse.swt.internal.ole.win32.GUID*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The type java.awt.Canvas referenced in org.eclipse.swt.awt.SWT_AWT.11.(Display, Shell, Canvas) is not defined in the bundle's required execution environment: CDC-1.0/Foundation-1.0*10 11 12 13 14 15 16 17 18
+org.eclipse.swt.events.TraverseListener extends non-API type org.eclipse.swt.internal.SWTEventListener*1 2 3 10 11 12 13 14 15 16 17 18
+org.eclipse.team.internal.ccvs.ui.console.CVSOutputConsole illegally extends org.eclipse.ui.console.MessageConsole*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+An anonymous type defined in org.eclipse.team.internal.ccvs.ui.wizards.ModuleSelectionPage.createModuleTree(Composite, int) illegally extends TreeViewer*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.internal.ccvs.ui.wizards.CommitWizard illegally references method org.eclipse.team.ui.synchronize.SubscriberParticipant.getSubscriberSyncInfoCollector()*4 5 6
+org.eclipse.team.internal.ccvs.ui.wizards.GenerateDiffFileWizard.LocationPage illegally references method org.eclipse.team.ui.synchronize.SubscriberParticipant.getSubscriberSyncInfoCollector()*4 5 6
+org.eclipse.team.internal.ccvs.ui.wizards.ModuleSelectionPage$5 illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3
+org.eclipse.team.internal.ui.synchronize.DialogSynchronizePageSite illegally implements org.eclipse.ui.IActionBars*10 11 12 13 14 15 16 17 18
+org.eclipse.team.internal.ui.history.FileRevisionEditorInput illegally implements org.eclipse.core.resources.IFileState*10 11 12 13 14 15 16 17 18
+org.eclipse.team.internal.ui.synchronize.LocalResourceSaveableComparison illegally references method org.eclipse.compare.contentmergeviewer.ContentMergeViewer.internalIsRightDirty()*10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.internal.ui.synchronize.SynchronizeModelElementSorter illegally extends org.eclipse.ui.views.navigator.ResourceSorter*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.ui.synchronize.SubscriberParticipant.getSubscriberSyncInfoCollector() has non-API return type org.eclipse.team.internal.core.subscribers.SubscriberSyncInfoCollector*1 2 3
+An anonymous type defined in org.eclipse.team.internal.ui.synchronize.DialogSynchronizePageSite.createActionBars(IToolBarManager) illegally implements IActionBars*19
+An anonymous type defined in org.eclipse.team.internal.ui.synchronize.actions.RefactorActionGroup.makeActions() illegally extends RenameResourceAction*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.internal.ui.synchronize.actions.OpenFileInSystemEditorAction illegally extends org.eclipse.ui.actions.OpenFileAction*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+An anonymous type defined in org.eclipse.team.internal.ui.synchronize.actions.RefactorActionGroup.makeActions() illegally extends MoveResourceAction*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.internal.ui.synchronize.LocalResourceSaveableComparison illegally references method org.eclipse.compare.contentmergeviewer.ContentMergeViewer.internalIsLeftDirty()*10 11 12 13 14 15 16 17 18 19
+An anonymous type defined in org.eclipse.team.ui.synchronize.ModelSynchronizeParticipant illegally extends PreferenceStore*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.ui.synchronize.ModelSynchronizeParticipant$1 illegally extends org.eclipse.jface.preference.PreferenceStore*1 2 3
+An anonymous type defined in org.eclipse.team.internal.ui.synchronize.SaveablesCompareEditorInput.handleMenuAboutToShow(IMenuManager, ICompareContainer, Saveable, ITypedElement, ISelectionProvider) illegally extends OpenWithMenu*7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.ui.synchronize.ModelSynchronizeParticipant.refreshSchedule declared as non-API type org.eclipse.team.internal.ui.synchronize.SubscriberRefreshSchedule*1 2 3
+org.eclipse.team.internal.ui.dialogs.ResourceMappingResourceDisplayArea$1 illegally extends org.eclipse.ui.views.navigator.ResourceSorter*1 2 3
+An anonymous type defined in org.eclipse.team.internal.ui.history.FileRevisionEditorInput.wrapStorage(IStorage, String) illegally implements IFileState*19
+org.eclipse.team.internal.ui.mapping.ResourceModelSorter illegally extends org.eclipse.ui.views.navigator.ResourceSorter*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.internal.ui.synchronize.LocalResourceTypedElement illegally extends org.eclipse.compare.ResourceNode*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.ui.synchronize.SubscriberParticipant.setRefreshSchedule(SubscriberRefreshSchedule) has non-API parameter type org.eclipse.team.internal.ui.synchronize.SubscriberRefreshSchedule*1 2 3
+org.eclipse.team.ui.synchronize.SubscriberParticipant.getRefreshSchedule() has non-API return type org.eclipse.team.internal.ui.synchronize.SubscriberRefreshSchedule*1 2 3
+org.eclipse.team.internal.ui.synchronize.TreeViewerAdvisor.NavigableTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.internal.ui.synchronize.DialogSynchronizePageSite$1 illegally implements org.eclipse.ui.IActionBars*1 2 3
+org.eclipse.team.internal.ui.synchronize.TreeViewerAdvisor$NavigableTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3
+An anonymous type defined in org.eclipse.team.internal.ui.synchronize.SaveablesCompareEditorInput.handleMenuAboutToShow(IMenuManager, ICompareContainer, Saveable, ITypedElement, ISelectionProvider) illegally extends OpenFileAction*7 8 9 10 11 12 13 14 15 16 17 18 19
+An anonymous type defined in org.eclipse.team.internal.ui.synchronize.actions.RefactorActionGroup.makeActions() illegally extends DeleteResourceAction*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.team.internal.ui.synchronize.actions.RefactorActionGroup$1 illegally extends org.eclipse.ui.actions.DeleteResourceAction*1 2 3
+org.eclipse.ui.externaltools.internal.menu.OpenExternalToolsConfigurations illegally extends org.eclipse.debug.ui.actions.OpenLaunchDialogAction*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.views.markers.MarkersTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.ide.WorkbenchActionBuilder illegally references constructor org.eclipse.ui.menus.CommandContributionItemParameter*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+An anonymous type defined in org.eclipse.ui.dialogs.WizardExportPage.queryResourceTypesToExport() illegally extends ListSelectionDialog*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+An anonymous type defined in org.eclipse.ui.internal.ide.dialogs.WelcomeEditor.createTitleArea(Composite) illegally extends CLabel*7 8 9 10 11 12 13 14 15 16 17 18
+An anonymous type defined in org.eclipse.ui.internal.ide.dialogs.BuildOrderPreferencePage.addProject() illegally extends ListSelectionDialog*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.views.markers.MarkerSupportView extends non-API type org.eclipse.ui.internal.views.markers.ExtendedMarkersView*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.dialogs.WizardResourceImportPage.selectionGroup declared as non-API type org.eclipse.ui.internal.ide.dialogs.ResourceTreeAndListGroup*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.views.tasklist.TaskPropertiesDialog extends non-API type org.eclipse.ui.views.markers.internal.DialogTaskProperties*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.ide.actions.RetargetActionWithDefault illegally extends org.eclipse.ui.actions.RetargetAction*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.views.bookmarkexplorer.BookmarkPropertiesDialog extends non-API type org.eclipse.ui.views.markers.internal.DialogMarkerProperties*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.dialogs.WizardResourceImportPage.getSelectedResources(IElementFilter, IProgressMonitor) has non-API parameter type org.eclipse.ui.internal.ide.dialogs.IElementFilter*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.contexts.ContextService illegally references method org.eclipse.e4.ui.services.EContextService.deferUpdates(boolean)*19
+The type java.nio.charset.IllegalCharsetNameException referenced in org.eclipse.ui.internal.dialogs.ContentTypesPreferencePage.3.modifyText(ModifyEvent) is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*13 14 15
+org.eclipse.ui.internal.EditorActionBars.Overrides illegally implements org.eclipse.jface.action.IContributionManagerOverrides*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.presentations.ISelfUpdatingAction illegally implements org.eclipse.jface.action.IAction*1 2 3
+org.eclipse.ui.internal.SaveablesList illegally instantiates org.eclipse.core.runtime.AssertionFailedException*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+An anonymous type defined in org.eclipse.ui.internal.CoolBarToTrimManager.find(String) illegally extends ToolBarContributionItem*16 17 18 19
+org.eclipse.ui.internal.dialogs.CustomizePerspectiveDialog illegally references method org.eclipse.e4.ui.model.application.ui.menu.MHandledItem.getWbCommand()*19
+The type org.w3c.dom.css.CSSValue referenced in org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcherCSSHandler.applyCSSProperty(Control, String, CSSValue, String, CSSEngine) is not defined in the bundle's required execution environment: J2SE-1.5*16
+org.eclipse.ui.internal.PlaceholderContributionItem illegally implements org.eclipse.jface.action.IContributionItem*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.EditorActionBars$Overrides illegally implements org.eclipse.jface.action.IContributionManagerOverrides*1 2 3
+An anonymous type defined in org.eclipse.ui.internal.CoolBarToTrimManager.getItems() illegally extends ToolBarContributionItem*16 17 18 19
+org.eclipse.ui.dialogs.ContainerCheckedTreeViewer illegally extends org.eclipse.jface.viewers.CheckboxTreeViewer*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The type org.w3c.dom.css.CSSValueList referenced in org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcherCSSHandler.applyCSSProperty(Control, String, CSSValue, String, CSSEngine) is not defined in the bundle's required execution environment: J2SE-1.5*16
+org.eclipse.ui.part.CoolItemGroupMarker illegally extends org.eclipse.jface.action.GroupMarker*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.themes.CascadingFontRegistry illegally extends org.eclipse.jface.resource.FontRegistry*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The method java.util.regex.Pattern.compile(String) referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.ActivityPatternBinding(String, String, boolean) is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+The type java.util.regex.Pattern referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.getPattern() is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+The method java.util.regex.Pattern.matcher(CharSequence) referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.isMatch(String) is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+org.eclipse.ui.actions.CommandNotMappedException illegally extends org.eclipse.core.commands.common.CommandException*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.presentations.UpdatingActionContributionItem illegally extends org.eclipse.jface.action.ActionContributionItem*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+org.eclipse.ui.contexts.IContextActivation extends non-API type org.eclipse.ui.internal.services.IEvaluationResultCache*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.WorkbenchWindow illegally implements org.eclipse.jface.action.IContributionManagerOverrides*10 11 12 13 14 15 16 17 18
+org.eclipse.ui.menus.WorkbenchWindowControlContribution extends non-API type org.eclipse.ui.internal.menus.InternalControlContribution*1 2 3 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.services.IEvaluationReference extends non-API type org.eclipse.ui.internal.services.IEvaluationResultCache*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.PluginActionContributionItem illegally extends org.eclipse.jface.action.ActionContributionItem*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+An anonymous type defined in org.eclipse.ui.internal.presentations.BasicPartList.createTableViewer(Composite, int) illegally extends TableViewer*4 5 6 7 8 9 10 11 12 13 14 15
+org.eclipse.ui.internal.EditorMenuManager$Overrides illegally implements org.eclipse.jface.action.IContributionManagerOverrides*1 2 3
+org.eclipse.ui.internal.presentations.BasicPartList$1 illegally extends org.eclipse.jface.viewers.TableViewer*1 2 3
+org.eclipse.ui.actions.ContributedAction extends non-API type org.eclipse.ui.internal.actions.CommandAction*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The method org.w3c.dom.css.CSSValueList.getLength() referenced in org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcherCSSHandler.applyCSSProperty(Control, String, CSSValue, String, CSSEngine) is not defined in the bundle's required execution environment: J2SE-1.5*16
+org.eclipse.ui.dialogs.FilteredTree.NotifyingTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The method java.util.regex.Pattern.pattern() referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.getString() is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+An anonymous type defined in org.eclipse.ui.internal.menus.MenuHelper illegally extends ActionContributionItem*16 17 18 19
+org.eclipse.ui.internal.Workbench illegally references method org.eclipse.e4.ui.model.application.ui.basic.MTrimBar.getPendingCleanup()*19
+The method java.util.regex.Pattern.compile(String) referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.getPattern() is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+org.eclipse.ui.dialogs.FilteredTree$NotifyingTreeViewer illegally extends org.eclipse.jface.viewers.TreeViewer*1 2 3
+The method java.util.regex.Pattern.compile(String) referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.ActivityPatternBinding(String, String) is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+org.eclipse.ui.part.MultiPageEditorSite implements non-API interface org.eclipse.ui.internal.services.INestable*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.actions.PinEditorContributionItem illegally extends org.eclipse.jface.action.ActionContributionItem*1 2 3
+The type java.util.regex.Pattern referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.ActivityPatternBinding(String, Pattern) is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+The method java.nio.charset.Charset.isSupported(String) referenced in org.eclipse.ui.internal.dialogs.ContentTypesPreferencePage.3.modifyText(ModifyEvent) is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*13 14 15
+org.eclipse.ui.internal.MessageLine illegally extends org.eclipse.swt.custom.CLabel*7 8 9 10 11 12 13 14 15 16 17 18
+An anonymous type defined in org.eclipse.ui.internal.WorkbenchWindow illegally implements IContributionManagerOverrides*19
+org.eclipse.ui.internal.EditorMenuManager.Overrides illegally implements org.eclipse.jface.action.IContributionManagerOverrides*4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The type java.util.regex.Pattern referenced in org.eclipse.ui.activities.IActivityPatternBinding.getPattern() is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+org.eclipse.ui.IWorkbenchPage extends non-API type org.eclipse.ui.internal.ICompatibleWorkbenchPage*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.part.PageSite implements non-API interface org.eclipse.ui.internal.services.INestable*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.decorators.DecorationBuilder illegally implements org.eclipse.jface.viewers.IDecoration*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.handlers.IHandlerActivation extends non-API type org.eclipse.ui.internal.services.IEvaluationResultCache*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.internal.preferences.WorkingCopyPreferences illegally implements org.osgi.service.prefs.Preferences via org.eclipse.core.runtime.preferences.IEclipsePreferences*10 11 12 13 14 15 16 17 18 19
+The method java.util.regex.Matcher.matches() referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.isMatch(String) is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+org.eclipse.ui.internal.ActionSetContributionItem illegally extends org.eclipse.jface.action.SubContributionItem*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+org.eclipse.ui.actions.ActionFactory$IWorkbenchAction illegally implements org.eclipse.jface.action.IAction*1 2 3
+org.eclipse.ui.Saveable extends non-API type org.eclipse.ui.internal.InternalSaveable*1 2 3
+org.eclipse.ui.internal.themes.CascadingColorRegistry illegally extends org.eclipse.jface.resource.ColorRegistry*1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+The method org.w3c.dom.css.CSSValueList.item(int) referenced in org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcherCSSHandler.applyCSSProperty(Control, String, CSSValue, String, CSSEngine) is not defined in the bundle's required execution environment: J2SE-1.5*16
+The method java.util.regex.Pattern.pattern() referenced in org.eclipse.ui.internal.activities.ActivityPatternBinding.compareTo(Object) is not defined in the bundle's required execution environment: CDC-1.1/Foundation-1.1*4 5 6 7 8 9 10 11 12 13 14 15
+The method org.w3c.dom.css.CSSValue.getCssValueType() referenced in org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcherCSSHandler.applyCSSProperty(Control, String, CSSValue, String, CSSEngine) is not defined in the bundle's required execution environment: J2SE-1.5*16
