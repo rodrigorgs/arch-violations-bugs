@@ -23,7 +23,7 @@ REGEX.CLASS <- paste0(
 
 #####################
 
-lines <- readLines("../data/violfile.txt")
+lines <- readLines("../raw-data/violfile.txt")
 
 # Split by *
 x <- str_match(lines, "(.+)\\*(.+)")[, c(2, 3)]

@@ -5,7 +5,7 @@ library(stringr)
 # input generated from the command
 # git log --stat=999 --pretty=format:"commit: %H | %ad | %s" --date=iso8601 --since=@{2009-06-01} | gzip > ../logs/log-eclipse-platform.txt.gz
 
-file <- gzfile("../data/log-eclipse-platform.txt.gz")
+file <- gzfile("../raw-data/log-eclipse-platform.txt.gz")
 lines <- readLines(file)
 close(file)
 
