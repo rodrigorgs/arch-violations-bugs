@@ -27,14 +27,14 @@ lines <- readLines("../data/violfile.txt")
 
 # Split by *
 x <- str_match(lines, "(.+)\\*(.+)")[, c(2, 3)]
-violations <- data.frame(id=seq(lines), description=x[, 1], releases=x[, 2], stringsAsFactors=F)
+violations <- data.frame(violation=seq(lines), description=x[, 1], releases=x[, 2], stringsAsFactors=F)
 m <- str_match(violations$description, REGEX.CLASS)
-violations$source <- m[, 1]
+violations$klass <- m[, 1]
 
 releases.list <- strsplit(violations$releases, " +")
 viol.releases <- data.frame(
-  id = rep(violations$id, sapply(releases.list, length)), 
-  version = unlist(releases.list))
+  violation = rep(violations$violation, sapply(releases.list, length)), 
+  release = unlist(releases.list))
 
 saveRDS(violations, "../data/violations.rds")
 saveRDS(viol.releases, "../data/viol-releases.rds")
