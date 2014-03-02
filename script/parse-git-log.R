@@ -3,9 +3,10 @@ library(stringr)
 # input: log-eclipse-platform.txt.gz
 
 # input generated from the command
-# git log --stat=999 --pretty=format:"commit: %H | %ad | %s" --date=iso8601 --since=@{2009-06-01} | gzip > ../logs/log-eclipse-platform.txt.gz
+# $ git log --stat=999 --pretty=format:"commit: %H | %ad | %s" --date=iso8601 --since=@{2009-06-01} | gzip > ../logs/log-eclipse-platform.txt.gz
+# all git logs were concatenated, with a blank line between logs
 
-file <- gzfile("../raw-data/log-eclipse-platform.txt.gz")
+file <- bzfile("../raw-data/commit-logs.bz2")
 lines <- readLines(file)
 close(file)
 

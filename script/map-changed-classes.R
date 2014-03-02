@@ -15,5 +15,6 @@ for (i in 1:nrow(klasses)) {
 	changed.files[matches, "klass"] <- x$klass
 }
 
-changed.classes <- subset(changed.files, !is.na(klass))
-saveRDS(changed.classes, "../data/changed-klasses.rds")
+changed.klasses <- subset(changed.files, !is.na(klass))
+changed.klasses$file <- NULL
+saveRDS(changed.klasses, "../data/changed-klasses.rds")
