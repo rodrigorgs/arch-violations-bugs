@@ -9,7 +9,7 @@ org.eclipse.jdt.ui-lifecycle,eclipse.jdt.ui
 org.eclipse.jface-lifecycle,eclipse.platform.ui
 org.eclipse.ltk.ui.refactoring-lifecycle,eclipse.jdt.ui
 org.eclipse.pde.ui-lifecycle,eclipse.pde.ui
-org.eclipse.swt-lifecycle,eclipse.swt
+org.eclipse.swt-lifecycle,eclipse.platform.swt
 org.eclipse.team.cvs.ui-lifecycle,eclipse.platform.team
 org.eclipse.team.ui-lifecycle,eclipse.platform.team
 org.eclipse.ui.externaltools-lifecycle,eclipse.platform
