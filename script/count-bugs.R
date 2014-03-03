@@ -21,6 +21,8 @@ releases <- readRDS("../data/eclipse-releases.rds")
 violations <- readRDS("../data/violations.rds")
 viol.releases <- readRDS("../data/viol-releases.rds")
 
+releases
+
 #' Discover the release associated with each commit. For simplicity, we take the most recent release before the commit.
 
 commits2 <- sqldf("select * from commits
@@ -101,6 +103,14 @@ r1$guides(
 	x = list(title = "1 + avg violations per release", scale = list(type = "log")),
 	y = list(title="1 + bugs", scale = list(type = "log")))
 r1
+
+#' ## Threats to validity
+#'
+#' * Absolute bug count is a biased metric; we should use bug density instead (bugs / lines of code). Maybe we should also take into account the number of days of a release.
+#' * There's no way to be sure about the assignment between a bug and a release; as a heuristic, we assign a bug to the newest release before the bug fix.
+#' * Data from some releases is missing.
+#' * Possibly not all bugs are referenced in commit messages.
+#'
 
 # /*
 # add 1 to allow plotting in log-scale
