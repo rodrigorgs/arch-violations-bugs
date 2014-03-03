@@ -17,17 +17,9 @@ library(rCharts)
 
 commits <- readRDS("../data/commit-log.rds")
 changed.klasses <- readRDS("../data/changed-klasses.rds")
-releases <- read.csv("../data/eclipse-releases.csv", stringsAsFactors=F)
+releases <- readRDS("../data/eclipse-releases.rds")
 violations <- readRDS("../data/violations.rds")
 viol.releases <- readRDS("../data/viol-releases.rds")
-
-#' Compute initial and final time for each release
-
-# TODO: move computation to another script
-releases$initial.time <- as.POSIXct(releases$time)
-releases <- releases %.% arrange(initial.time)
-releases$final.time <- c(releases$initial.time[-1] - 1, as.POSIXct("2013-09-11 10:00:00-04:00") - 1)
-releases$time <- NULL
 
 #' Discover the release associated with each commit. For simplicity, we take the most recent release before the commit.
 
@@ -38,10 +30,6 @@ commits2 <- sqldf("select * from commits
 #' Now, get the classes changed in each commit
 
 commits2 <- merge(commits2, changed.klasses)
-
-#' Here's what it looks like
-
-head(commits2)
 
 #' Number of bugs for each (klass, release):
 
@@ -73,11 +61,17 @@ df <- klass.x.release %.%
 df$violations[is.na(df$violations)] <- 0
 df$bugs[is.na(df$bugs)] <- 0
 
+#' Here's what it looks like
+
+head(df)
+
 #' Also, combine data across all releases, so we have the number of bugs and the average number of violations for each klass.
 
 overall <- df %.%
 	group_by(klass) %.%
-	summarise(bugs = sum(bugs), violations = mean(violations))
+	summarise(releases_with_violations = sum(violations > 0),
+		bugs = sum(bugs), 
+		violations = mean(violations))
 
 #' ## Correlation analysis
 
@@ -101,7 +95,8 @@ overall$violations1 <- overall$violations + 1 + runif(n, -0.01, 0.01)
 tooltip.fn <- "#! function(x) { 
 		return(x.klass + '\\n.\\nbugs: ' + x.bugs + '\\nviolations/release: ' + x.violations); } !#";
 
-r1 <- rPlot(bugs1 ~ violations1, data = overall, type = "point", tooltip=tooltip.fn)
+r1 <- rPlot(bugs1 ~ violations1, data = overall, type = "point", 
+	tooltip = tooltip.fn, color = "releases_with_violations")
 r1$guides(
 	x = list(title = "1 + avg violations per release", scale = list(type = "log")),
 	y = list(title="1 + bugs", scale = list(type = "log")))
