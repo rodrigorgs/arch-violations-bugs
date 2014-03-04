@@ -22,5 +22,6 @@ mv r$BASENAME.html $BASENAME.html
 
 # Fix rCharts bug
 sed -i ".bak" -e 's/\\\\n/\\n/g' figure/*.html
+rm figure/*.bak
 
 cd -

@@ -15,89 +15,36 @@ library(rCharts)
 
 #' ## Data
 
-commits <- readRDS("../data/commit-log.rds")
-changed.klasses <- readRDS("../data/changed-klasses.rds")
-releases <- readRDS("../data/eclipse-releases.rds")
-violations <- readRDS("../data/violations.rds")
-viol.releases <- readRDS("../data/viol-releases.rds")
+klass.release.metrics <- readRDS("../data/klass-release-metrics.rds")
+klass.metrics <- readRDS("../data/klass-metrics.rds")
 
-releases
-
-#' Discover the release associated with each commit. For simplicity, we take the most recent release before the commit.
-
-commits2 <- sqldf("select * from commits
-	left join releases
-	where time between initial_time and final_time")
-
-#' Now, get the classes changed in each commit
-
-commits2 <- merge(commits2, changed.klasses)
-
-#' Number of bugs for each (klass, release):
-
-bug.count <- commits2 %.%
-	merge(changed.klasses) %.%
-	group_by(klass, release) %.%
-	summarise(bugs = n_distinct(bug)) %.%
-	arrange(desc(bugs))
-
-#' Number of violations for each (klass, release):
-
-violation.count <- violations %.%
-	merge(viol.releases) %.%
-	select(klass, release) %.%
-	group_by(klass, release) %.%
-	summarise(violations = n()) %.%
-	arrange(klass, release)
-
-#' Now, unify the data so we have the number of bugs and violations for each (klass, release).
-
-klass.names <- unique(violations$klass)
-release.numbers <- 1:19
-klass.x.release <- expand.grid(klass=klass.names, release=release.numbers)
-
-df <- klass.x.release %.%
-	merge(bug.count, all.x=T) %.%
-	merge(violation.count, all.x=T) %.%
-	arrange(klass, as.numeric(release))
-df$violations[is.na(df$violations)] <- 0
-df$bugs[is.na(df$bugs)] <- 0
-
-#' Here's what it looks like
-
-head(df)
-
-#' Also, combine data across all releases, so we have the number of bugs and the average number of violations for each klass.
-
-overall <- df %.%
-	group_by(klass) %.%
-	summarise(releases_with_violations = sum(violations > 0),
-		bugs = sum(bugs), 
-		violations = mean(violations))
+head(klass.release.metrics)
+head(klass.metrics[, c("klass", "bugs", "violations")])
 
 #' ## Correlation analysis
 
 #' ### Correlation between number of violations in a release and number of bugs in the same release:
-cor.test(df$violations, df$bugs, method="spearman")
+
+cor.test(~ bugs + violations, data=klass.release.metrics, method="spearman")
 
 #' ### Correlation between number of violations and number of bugs (across all releases)
 
-cor.test(overall$violations, overall$bugs, method="spearman")
-
+cor.test(~ bugs + violations, data=klass.metrics, method="spearman")
 
 #- results='asis'
+
 options(rcharts.cdn = TRUE)
 
 # add 1 to allow plotting in log-scale
 # add noise so we can see multiple points at the same (x, y)
-n <- nrow(overall)
-overall$bugs1 <- overall$bugs + 1 + runif(n, -0.1, 0.1)
-overall$violations1 <- overall$violations + 1 + runif(n, -0.01, 0.01)
+n <- nrow(klass.metrics)
+klass.metrics$bugs1 <- klass.metrics$bugs + 1 + runif(n, -0.1, 0.1)
+klass.metrics$violations1 <- klass.metrics$violations + 1 + runif(n, -0.01, 0.01)
 
 tooltip.fn <- "#! function(x) { 
 		return(x.klass + '\\n.\\nbugs: ' + x.bugs + '\\nviolations/release: ' + x.violations); } !#";
 
-r1 <- rPlot(bugs1 ~ violations1, data = overall, type = "point", 
+r1 <- rPlot(bugs1 ~ violations1, data = klass.metrics, type = "point", 
 	tooltip = tooltip.fn, color = "releases_with_violations")
 r1$guides(
 	x = list(title = "1 + avg violations per release", scale = list(type = "log")),
