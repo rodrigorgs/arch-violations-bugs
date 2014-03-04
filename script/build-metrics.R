@@ -9,12 +9,25 @@ changed.klasses <- readRDS("../data/changed-klasses.rds")
 releases <- readRDS("../data/eclipse-releases.rds")
 violations <- readRDS("../data/violations.rds")
 viol.releases <- readRDS("../data/viol-releases.rds")
+bugs <- readRDS("../data/bugs.rds")
 
 ###########
+#
+# Map commits to releases
 
-commits.with.release <- sqldf("select * from commits
-	left join releases
-	where time between initial_time and final_time")
+# Option 1: via bug report
+commits$bug <- as.integer(commits$bug)
+
+commits.with.release <- commits %.%
+	inner_join(bugs) %.%
+	inner_join(releases, by="version")
+
+## Option 2: via commit time
+# commits.with.release <- sqldf("select * from commits
+# 	left join releases
+# 	where time between initial_time and final_time")
+
+###########
 
 bug.count <- commits.with.release %.%
 	inner_join(changed.klasses) %.%

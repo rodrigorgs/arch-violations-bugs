@@ -205,7 +205,7 @@ head(klass.release.metrics)
 ## 3 org.eclipse.ant.core.Task       3    0          1
 ## 4 org.eclipse.ant.core.Task       4    0          1
 ## 5 org.eclipse.ant.core.Task       5    0          1
-## 6 org.eclipse.ant.core.Task       6    1          1
+## 6 org.eclipse.ant.core.Task       6    0          1
 </code></pre>
 
 <pre><code class="r">head(klass.metrics[, c(&quot;klass&quot;, &quot;bugs&quot;, &quot;violations&quot;)])
@@ -214,12 +214,12 @@ head(klass.release.metrics)
 <pre><code>## Source: local data frame [6 x 3]
 ## 
 ##                          klass bugs violations
-## 1      org.eclipse.ui.Saveable    3     0.1579
-## 2      org.eclipse.swt.awt.SWT    0    15.1579
-## 3    org.eclipse.ant.core.Type    2     1.0000
-## 4    org.eclipse.ant.core.Task    2     1.0000
-## 5 org.eclipse.ui.part.PageSite   16     1.0000
-## 6 org.eclipse.swt.graphics.RGB    2     0.6316
+## 1      org.eclipse.swt.awt.SWT    0    15.1579
+## 2      org.eclipse.ui.Saveable    0     0.1579
+## 3    org.eclipse.ant.core.Type    0     1.0000
+## 4    org.eclipse.ant.core.Task    0     1.0000
+## 5 org.eclipse.ui.part.PageSite    0     1.0000
+## 6 org.eclipse.swt.graphics.RGB    0     0.6316
 </code></pre>
 
 <h2>Correlation analysis</h2>
@@ -236,11 +236,11 @@ head(klass.release.metrics)
 ##  Spearman&#39;s rank correlation rho
 ## 
 ## data:  bugs and violations
-## S = 5.785e+10, p-value = 2.462e-12
+## S = 5.539e+10, p-value = 0.001473
 ## alternative hypothesis: true rho is not equal to 0
 ## sample estimates:
 ##      rho 
-## -0.08457
+## -0.03844
 </code></pre>
 
 <h3>Correlation between number of violations and number of bugs (across all releases)</h3>
@@ -255,11 +255,11 @@ head(klass.release.metrics)
 ##  Spearman&#39;s rank correlation rho
 ## 
 ## data:  bugs and violations
-## S = 9281217, p-value = 0.0002197
+## S = 8587467, p-value = 0.04785
 ## alternative hypothesis: true rho is not equal to 0
 ## sample estimates:
 ##     rho 
-## -0.1936
+## -0.1044
 </code></pre>
 
 <pre><code class="r">
@@ -288,7 +288,7 @@ figure/unnamed-chunk-6.html
 polycharts
  '
 id=iframe-
-chart11816715d540
+chart15777ee36af1
 ></iframe>
 
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
