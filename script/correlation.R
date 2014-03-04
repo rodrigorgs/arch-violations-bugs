@@ -31,7 +31,7 @@ cor.test(~ bugs + violations, data=klass.release.metrics, method="spearman")
 
 cor.test(~ bugs + violations, data=klass.metrics, method="spearman")
 
-#- results='asis'
+#- scatter-bugs-violations,results='asis'
 
 options(rcharts.cdn = TRUE)
 
