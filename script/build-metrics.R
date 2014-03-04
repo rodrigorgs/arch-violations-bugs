@@ -34,7 +34,7 @@ violation.count <- violations %.%
 
 ###########
 
-klass.names <- unique(violations$klass)
+klass.names <- unique(violations$klass) %.% na.omit()
 release.numbers <- as.numeric(1:19)
 klass.x.release <- expand.grid(klass=klass.names, release=release.numbers, stringsAsFactors=F)
 
@@ -54,7 +54,7 @@ klass.metrics <- klass.release.metrics %.%
 	group_by(klass) %.%
 	summarise(releases_with_violations = sum(violations > 0),
 		bugs = sum(bugs), 
-		violations = mean(violations))
-	arrange(klass)
+		violations = mean(violations)) %.%
+	arrange(nchar(klass))
 
 saveRDS(klass.metrics, "../data/klass-metrics.rds")
