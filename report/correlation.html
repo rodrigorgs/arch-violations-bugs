@@ -199,13 +199,13 @@ klass.metrics &lt;- readRDS(&quot;../data/klass-metrics.rds&quot;)
 head(klass.release.metrics)
 </code></pre>
 
-<pre><code>##                       klass release bugs violations
-## 1 org.eclipse.ant.core.Task       1    0          1
-## 2 org.eclipse.ant.core.Task       2    0          1
-## 3 org.eclipse.ant.core.Task       3    0          1
-## 4 org.eclipse.ant.core.Task       4    0          1
-## 5 org.eclipse.ant.core.Task       5    0          1
-## 6 org.eclipse.ant.core.Task       6    0          1
+<pre><code>##                       klass release reopened bugs violations
+## 1 org.eclipse.ant.core.Task       1    FALSE    0          1
+## 2 org.eclipse.ant.core.Task       2    FALSE    0          1
+## 3 org.eclipse.ant.core.Task       3    FALSE    0          1
+## 4 org.eclipse.ant.core.Task       4    FALSE    0          1
+## 5 org.eclipse.ant.core.Task       5    FALSE    0          1
+## 6 org.eclipse.ant.core.Task       6    FALSE    0          1
 </code></pre>
 
 <pre><code class="r">head(klass.metrics[, c(&quot;klass&quot;, &quot;bugs&quot;, &quot;violations&quot;)])
@@ -275,7 +275,7 @@ tooltip.fn &lt;- &quot;#! function(x) {
         return(x.klass + &#39;\\n.\\nbugs: &#39; + x.bugs + &#39;\\nviolations/release: &#39; + x.violations); } !#&quot;;
 
 r1 &lt;- rPlot(bugs1 ~ violations1, data = klass.metrics, type = &quot;point&quot;, 
-    tooltip = tooltip.fn, color = &quot;releases_with_violations&quot;)
+    tooltip = tooltip.fn, color = &quot;reopened&quot;)
 r1$guides(
     x = list(title = &quot;1 + avg violations per release&quot;, scale = list(type = &quot;log&quot;)),
     y = list(title=&quot;1 + bugs&quot;, scale = list(type = &quot;log&quot;)))
@@ -288,7 +288,7 @@ figure/unnamed-chunk-6.html
 polycharts
  '
 id=iframe-
-chart15777ee36af1
+chart1a426706e9c3
 ></iframe>
 
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>

@@ -32,9 +32,10 @@ commits.with.release <- commits %.%
 bug.count <- commits.with.release %.%
 	inner_join(changed.klasses) %.%
 	group_by(klass, release) %.%
-	summarise(bugs = n_distinct(bug)) %.%
+	summarise(bugs = n_distinct(bug),
+		reopened = any(reopened)) %.%
 	arrange(klass, release) %.%
-	select(klass, release, bugs)
+	select(klass, release, bugs, reopened)
 
 ###########
 
@@ -58,6 +59,7 @@ klass.release.metrics <- klass.x.release %.%
 
 klass.release.metrics$violations[is.na(klass.release.metrics$violations)] <- 0
 klass.release.metrics$bugs[is.na(klass.release.metrics$bugs)] <- 0
+klass.release.metrics$reopened[is.na(klass.release.metrics$reopened)] <- FALSE
 
 saveRDS(klass.release.metrics, "../data/klass-release-metrics.rds")
 
@@ -67,7 +69,8 @@ klass.metrics <- klass.release.metrics %.%
 	group_by(klass) %.%
 	summarise(releases_with_violations = sum(violations > 0),
 		bugs = sum(bugs), 
-		violations = mean(violations)) %.%
+		violations = mean(violations),
+		reopened = any(reopened)) %.%
 	arrange(nchar(klass))
 
 saveRDS(klass.metrics, "../data/klass-metrics.rds")

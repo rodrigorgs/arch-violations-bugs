@@ -45,7 +45,7 @@ tooltip.fn <- "#! function(x) {
 		return(x.klass + '\\n.\\nbugs: ' + x.bugs + '\\nviolations/release: ' + x.violations); } !#";
 
 r1 <- rPlot(bugs1 ~ violations1, data = klass.metrics, type = "point", 
-	tooltip = tooltip.fn, color = "releases_with_violations")
+	tooltip = tooltip.fn, color = "reopened")
 r1$guides(
 	x = list(title = "1 + avg violations per release", scale = list(type = "log")),
 	y = list(title="1 + bugs", scale = list(type = "log")))
