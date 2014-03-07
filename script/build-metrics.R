@@ -9,7 +9,8 @@ changed.klasses <- readRDS("../data/changed-klasses.rds")
 releases <- readRDS("../data/eclipse-releases.rds")
 violations <- readRDS("../data/violations.rds")
 viol.releases <- readRDS("../data/viol-releases.rds")
-bugs <- readRDS("../data/bugs.rds")
+# bugs <- readRDS("../data/bugs.rds")
+bugs <- readRDS("../data/bugs-extended.rds")
 
 ###########
 #
