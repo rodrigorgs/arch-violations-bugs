@@ -54,6 +54,7 @@ release.numbers <- as.numeric(1:19)
 klass.x.release <- expand.grid(klass=klass.names, release=release.numbers, stringsAsFactors=F)
 
 klass.release.metrics <- klass.x.release %.%
+	left_join(releases) %.%
 	left_join(bug.count) %.%
 	left_join(violation.count) %.%
 	arrange(klass, release)
@@ -63,6 +64,18 @@ klass.release.metrics$bugs[is.na(klass.release.metrics$bugs)] <- 0
 klass.release.metrics$reopened[is.na(klass.release.metrics$reopened)] <- FALSE
 
 saveRDS(klass.release.metrics, "../data/klass-release-metrics.rds")
+
+###########
+
+klass.major.metrics <- klass.release.metrics %.%
+	group_by(version=substring(version, 1, 3), klass) %.%
+	summarise(
+		release = min(release),
+		bugs = sum(bugs),
+		violations = sum(violations),
+		reopened = any(reopened))
+
+saveRDS(klass.major.metrics, "../data/klass-major-metrics.rds")
 
 ###########
 

@@ -9,10 +9,8 @@ library(dplyr)
 #' ## Data
 
 klass.release.metrics <- readRDS("../data/klass-release-metrics.rds")
-releases <- readRDS("../data/eclipse-releases.rds")
 
 timeseries <- klass.release.metrics %.%
-	inner_join(releases, by="release") %.%
 	group_by(release) %.%
 	summarise(bugs = sum(bugs),
 		violations = sum(violations),
@@ -29,8 +27,12 @@ timeseries
 #- vbtimeseries,results='asis'
 options(rcharts.cdn = TRUE)
 timeseries2 <- melt(timeseries, c("version", "time"))
-h <- hPlot(value ~ version, group="variable", data=timeseries2, type="line") # like it!
+h <- hPlot(value ~ version, group="variable", type="line", data=timeseries2) # like it!
 h$save("../report/timeseries-plot.html")
+
+h <- hPlot(value ~ version, group="variable", type="line", data=subset(timeseries2, nchar(version) == 3)) # like it!
+h$save("../report/timeseries-plot2.html")
+
 
 # /*
 # nPlot(value ~ version, group="variable", data=timeseries2, type="multiBarChart")

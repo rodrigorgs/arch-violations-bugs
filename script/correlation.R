@@ -54,9 +54,7 @@ r1
 #' ## Threats to validity
 #'
 #' * Absolute bug count is a biased metric; we should use bug density instead (bugs / lines of code). Maybe we should also take into account the number of days of a release.
-#' * There's no way to be sure about the assignment between a bug and a release; as a heuristic, we assign a bug to the newest release before the bug fix.
-#' * Data from some releases is missing.
-#' * Possibly not all bugs are referenced in commit messages.
+#' * We only consider bugs that are referenced in commit logs and whose bug report's "version" field is set. This may be a source of selection bias.
 #'
 
 # /*
