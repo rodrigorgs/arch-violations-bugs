@@ -4,6 +4,7 @@ library(DBI)
 library(RMySQL)
 library(plyr)
 library(dplyr)
+library(yaml)
 
 ##########
 
@@ -20,7 +21,13 @@ bug.numbers <- as.integer(bug.numbers)
 #
 # Bugs
 
-db <- src_mysql(dbname="bugs", user="root", password="root")
+config <- yaml.load_file("../config/db.yml")
+
+db <- src_mysql(dbname = config$dbname, 
+	host = config$host,
+	port = config$port,
+	user = config$user,
+	password = config$password)
 
 bugs <- tbl(db, "bugs") %.%
 	filter(bug_id %in% bug.numbers) %.%

@@ -1,0 +1,6 @@
+# Copy this file to db.yml and change the settings below
+dbname: bugs
+host: localhost
+port: 3389
+username: your_db_username
+password: your_db_password
