@@ -13,6 +13,7 @@ You'll need R with the following packages installed:
 * stringr
 * reshape
 * rCharts
+* ggplot2
 * vioplot
 
 Also, you'll need to configure your MySQL database and git repositories using the files in `config/`.

@@ -7,6 +7,7 @@ source('../lib/rcharts-workaround.R', chdir=T)
 library(dplyr)
 library(sqldf)
 library(rCharts)
+library(ggplot2)
 
 #- echo=T, results='markup', warning=T, error=T, message=T
 
@@ -19,13 +20,13 @@ klass.release.metrics <- readRDS("../data/klass-release-metrics.rds")
 klass.metrics <- readRDS("../data/klass-metrics.rds")
 
 head(klass.release.metrics)
-head(klass.metrics[, c("klass", "bugs", "violations")])
+head(klass.metrics[, c("klass", "bugs", "bug_density", "violations")])
 
 #' ## Correlation analysis
 
-#' ### Correlation between number of violations in a release and number of bugs in the same release:
+#' ### Correlation between number of violations in a class in a certain release and number of lines of code
 
-cor.test(~ bugs + violations, data=klass.release.metrics, method="spearman")
+cor.test(~ bug_density + violations, data=klass.release.metrics, method="spearman")
 
 #' ### Correlation between number of violations and number of bugs (across all releases)
 
@@ -50,6 +51,12 @@ r1$guides(
 	x = list(title = "1 + avg violations per release", scale = list(type = "log")),
 	y = list(title="1 + bugs", scale = list(type = "log")))
 r1
+
+n <- nrow(klass.release.metrics)
+
+ggplot(klass.release.metrics, aes(factor(violations), bug_density)) + geom_boxplot() + xlab("number of architectural violations") + ylab("bugs / KLOC") + scale_y_log10()
+
+ggplot(klass.release.metrics, aes(factor(violations > 0), bug_density)) + geom_boxplot() + xlab("class has architectural violations?") + ylab("bugs / KLOC") + scale_y_log10()
 
 #' ## Threats to validity
 #'

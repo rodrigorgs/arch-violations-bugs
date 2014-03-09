@@ -10,15 +10,20 @@ library(dplyr)
 
 klass.release.metrics <- readRDS("../data/klass-release-metrics.rds")
 
+klass.release.metrics <- subset(klass.release.metrics, !is.na(loc))
+klass.release.metrics$bug_density <- NULL
+
 timeseries <- klass.release.metrics %.%
 	group_by(release) %.%
-	summarise(bugs = sum(bugs),
+	summarise(bug_density = 100000 * sum(bugs) / sum(loc),
+		bugs = sum(bugs),
+		loc = sum(loc)/ 100,
 		violations = sum(violations),
 		time = max(initial.time),
 		version = max(version)) %.%
 	arrange(time) %.%
 	mutate(time = as.character(time)) %.%
-	select(version, time, bugs, violations)
+	select(version, time, bugs, bug_density, violations, loc)
 
 timeseries
 

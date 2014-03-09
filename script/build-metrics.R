@@ -9,8 +9,8 @@ changed.klasses <- readRDS("../data/changed-klasses.rds")
 releases <- readRDS("../data/eclipse-releases.rds")
 violations <- readRDS("../data/violations.rds")
 viol.releases <- readRDS("../data/viol-releases.rds")
-# bugs <- readRDS("../data/bugs.rds")
 bugs <- readRDS("../data/bugs-extended.rds")
+klassloc <- readRDS("../data/klassloc.rds")
 
 ###########
 #
@@ -57,11 +57,13 @@ klass.release.metrics <- klass.x.release %.%
 	left_join(releases) %.%
 	left_join(bug.count) %.%
 	left_join(violation.count) %.%
+	left_join(klassloc, by=c("klass", "release")) %.%
 	arrange(klass, release)
 
 klass.release.metrics$violations[is.na(klass.release.metrics$violations)] <- 0
 klass.release.metrics$bugs[is.na(klass.release.metrics$bugs)] <- 0
 klass.release.metrics$reopened[is.na(klass.release.metrics$reopened)] <- FALSE
+klass.release.metrics <- mutate(klass.release.metrics, bug_density = 1000 * bugs / loc)
 
 saveRDS(klass.release.metrics, "../data/klass-release-metrics.rds")
 
