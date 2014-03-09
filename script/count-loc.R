@@ -27,6 +27,7 @@ for (i in 1:nrow(fileloc)) {
 
 	setwd(repo)
 	cmd.rev <- paste0("rev-list -n 1 --before='", what$initial.time, "' master '", path, "'")
+	print(cmd.rev)
 	rev <- system2("git", cmd.rev, stdout=T)
 
 	if (length(rev) == 0) {
@@ -34,6 +35,7 @@ for (i in 1:nrow(fileloc)) {
 	}
 	else {
 		cmd.show <- paste0("show ", rev, " master '", path, "'`:'", path, "' | cloc --csv --force-lang=java -")	
+		print(cmd.show)
 		csv <- system2("git", cmd.show, stdout=T)
 		print(csv)
 	}
