@@ -1,4 +1,4 @@
-files <- readLines("../data/files.txt")
+files <- readLines("../raw-data/files.txt")
 violations <- readRDS("../data/violations.rds")
 klasses <- unique(violations$klass)
 

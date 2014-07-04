@@ -1,7 +1,7 @@
 library(dplyr)
 library(yaml)
 
-files <- readLines("../data/files.txt")
+files <- readLines("../raw-data/files.txt")
 releases <- readRDS("../data/eclipse-releases.rds")
 
 fileloc <- expand.grid(release=releases$release, file=files, stringsAsFactors=F)
