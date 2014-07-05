@@ -1,7 +1,6 @@
 library(yaml)
 
-violations <- readRDS("../data/violations.rds")
-klasses <- unique(violations$klass)
+klasses <- readLines("../data/klasses.txt")
 
 config <- yaml.load_file("../config/gitrepo.yml")
 

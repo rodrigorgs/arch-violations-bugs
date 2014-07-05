@@ -56,6 +56,7 @@ end
 
 if __FILE__ == $0
   results = []
+  klasses = []
   IO.readlines('../raw-data/violfile.txt').each do |line|
     line.chomp!
     line.gsub!(/\*.*$/, '')
@@ -69,11 +70,15 @@ if __FILE__ == $0
     source = m['source'].gsub(/\$[^.]+/, '')
     target = m.names.include?('target') ? m['target'] : nil
     target = target && target.gsub(/\$[^.]+/, '')
+    
     results << [line, source, target]
+    klasses << source unless source.nil?
+    klasses << target unless target.nil?
   end
 
   File.open('../data/viol-klasses.tsv', 'w') do |f|
     f.puts "description\tsource\ttarget"
     f.puts results.map { |l| l.join("\t") }.join("\n")
   end
+  File.open('../data/klasses.txt', 'w') { |f| f.puts klasses.sort.uniq.join("\n") }
 end
