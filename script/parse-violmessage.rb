@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-# TODO: strip component after $, e.g. org.eclipse.ant.Test$1
-
 TYPE = /
   # First component
   \w+
@@ -17,8 +15,9 @@ METHOD = /
   \(.*?\)/x
 
 ENVIRONMENT = /[^ ]+/
-
 VERSION = /[^ ]+/
+BUNDLE = /[^ ]+/
+
 
 templates = [
   /^(?<source>#{TYPE}) illegally extends (?<target>#{TYPE})$/,
@@ -42,20 +41,8 @@ templates = [
   /^The method (?<source>#{TYPE})\.#{METHOD} in an interface that is intended to be implemented has been added$/,
   /^The constructor (?<target>#{TYPE})\.#{METHOD} referenced in (?<source>#{TYPE})\.#{METHOD} is not defined in the bundle's required execution environment: #{ENVIRONMENT}$/,
   /^The visibility of the method (?<source>#{TYPE})\.#{METHOD} has been reduced$/,
-  /^The minor version should be incremented in version #{VERSION} because reexported bundle (?<source>#{TYPE}) has changed its minor version$/,
+  /^The minor version should be incremented in version #{VERSION} because reexported bundle #{BUNDLE} has changed its minor version$/,
   /^An anonymous type defined in (?<source>#{TYPE}) illegally implements (?<target>#{TYPE})$/]
-
-# x = "org.eclipse.Java$Internal illegally extends com.sun.Sun"
-# m = templates[0].match(x)
-# p m
-# p TYPE.match("org.ads.asd.Asd")
-
-# x = "An anonymous type defined in org.eclipse.compare.CompareViewerPane.createTopLeft(Composite) illegally extends CLabel"
-# re = /^An anonymous type defined in (?<source>#{TYPE})\.#{METHOD} illegally extends (?<target>#{TYPE})$/
-# m = re.match(x)
-# m['qwe']
-# p m
-# exit 1
 
 def match_one(text, regexes)
   matches = []
@@ -67,11 +54,26 @@ def match_one(text, regexes)
   return matches.empty? ? nil : matches[0]
 end
 
-IO.readlines('../raw-data/violfile.txt').each do |line|
-  line.chomp!
-  line.gsub!(/\*.*$/, '')
+if __FILE__ == $0
+  results = []
+  IO.readlines('../raw-data/violfile.txt').each do |line|
+    line.chomp!
+    line.gsub!(/\*.*$/, '')
 
-  m = match_one(line, templates)
-  # puts line if m.nil?
-  puts m.nil? ? 'nil' : "#{m['source']} --- #{m.names.include?('target') ? m['target'] : 'nil'}"
+    line.gsub!(/\.\d+\./, '.method')
+    next if line =~ /^The minor version should be incremented in version.*/
+
+    m = match_one(line, templates)
+    raise RuntimeError, "No match for #{line}" if m.nil?
+
+    source = m['source'].gsub(/\$[^.]+/, '')
+    target = m.names.include?('target') ? m['target'] : nil
+    target = target && target.gsub(/\$[^.]+/, '')
+    results << [line, source, target]
+  end
+
+  File.open('../data/viol-klasses.tsv', 'w') do |f|
+    f.puts "description\tsource\ttarget"
+    f.puts results.map { |l| l.join("\t") }.join("\n")
+  end
 end
