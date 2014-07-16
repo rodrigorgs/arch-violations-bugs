@@ -9,8 +9,6 @@ TYPE = /
 METHOD = /
   # Method name
   \w+
-  # Strange numbers that appear on SWT_AWT_.11.
-  (?:\.\d+\.)?
   # Parameter list
   \(.*?\)/x
 
@@ -57,27 +55,32 @@ end
 if __FILE__ == $0
   results = []
   klasses = []
+  i = 0
   IO.readlines('../raw-data/violfile.txt').each do |line|
+    i += 1
     line.chomp!
     line.gsub!(/\*.*$/, '')
-
+    # Replace strange numbers that appear on some signatures, e.g. SWT_AWT_.11.
     line.gsub!(/\.\d+\./, '.method')
-    next if line =~ /^The minor version should be incremented in version.*/
 
     m = match_one(line, templates)
     raise RuntimeError, "No match for #{line}" if m.nil?
 
-    source = m['source'].gsub(/\$[^.]+/, '')
+    # remove internal class names (after $)
+    source = m.names.include?('source') ? m['source'] : nil
+    source = source.gsub(/\$[^.]+/, '') if source
     target = m.names.include?('target') ? m['target'] : nil
-    target = target && target.gsub(/\$[^.]+/, '')
+    target = target.gsub(/\$[^.]+/, '') if target
     
-    results << [line, source, target]
+    results << [i, line, source, target]
     klasses << source unless source.nil?
     klasses << target unless target.nil?
   end
 
+  puts "#{i} line(s) processed."
+
   File.open('../data/viol-klasses.tsv', 'w') do |f|
-    f.puts "description\tsource\ttarget"
+    f.puts "violation\tdescription\tsource\ttarget"
     f.puts results.map { |l| l.join("\t") }.join("\n")
   end
   File.open('../data/klasses.txt', 'w') { |f| f.puts klasses.sort.uniq.join("\n") }

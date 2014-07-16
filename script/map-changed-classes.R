@@ -1,9 +1,8 @@
 changed.files <- readRDS("../data/changed-files.rds")
-violations <- readRDS("../data/violations.rds")
+all.klasses <- readLines("../data/klasses.txt")
 
 changed.files$klass <- NA
 
-all.klasses <- unique(violations$klass)
 klass.files <- gsub(".", "/", all.klasses, fixed=T)
 klass.files <- paste0(klass.files, ".java")
 

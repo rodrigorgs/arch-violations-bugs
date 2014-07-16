@@ -12,6 +12,9 @@ viol.releases <- readRDS("../data/viol-releases.rds")
 bugs <- readRDS("../data/bugs-extended.rds")
 klassloc <- readRDS("../data/klassloc.rds")
 
+violations$klass <- violations$source
+# violations$klass <- violations$target
+
 ###########
 #
 # Map commits to releases
@@ -40,7 +43,7 @@ bug.count <- commits.with.release %.%
 
 ###########
 
-violation.count <- violations %.%
+violation.count <- subset(violations, !is.na(klass)) %.%
 	inner_join(viol.releases) %.%
 	group_by(klass, release) %.%
 	summarise(violations = n()) %.%
@@ -49,6 +52,7 @@ violation.count <- violations %.%
 
 ###########
 
+# klass.names <- readLines("../data/klasses.txt")
 klass.names <- unique(violations$klass) %.% na.omit()
 release.numbers <- as.numeric(1:19)
 klass.x.release <- expand.grid(klass=klass.names, release=release.numbers, stringsAsFactors=F)
