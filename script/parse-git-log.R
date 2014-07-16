@@ -19,7 +19,7 @@ info <- lines[commit.idx]
 hash <- substring(info, 9, 48)
 time <- as.POSIXct(substring(info, 52, 76))
 message <- substring(info, 80)
-bug <- str_match(tolower(message), "\\b\\d{5,6}\\b")[, 1]
+bug <- str_match(tolower(message), "\\b[0-9]{5,6}\\b")[, 1]
 
 commit.log <- data.frame(commit=seq(info), hash, time, bug, message, stringsAsFactors=F)
 saveRDS(commit.log, "../data/commit-log.rds")
