@@ -14,6 +14,11 @@ klassloc <- readRDS("../data/klassloc.rds")
 
 violations$klass <- violations$source
 # violations$klass <- violations$target
+# violations <- subset(violations, violtype == "api")
+# violations <- subset(violations, violtype == "inheritance")
+# violations <- subset(violations, violtype == "reference")
+# violations <- subset(violations, violtype == "instantiate")
+# violations <- subset(violations, violtype == "environment")
 
 ###########
 #

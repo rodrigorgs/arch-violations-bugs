@@ -31,6 +31,7 @@ inheritance instantiate api api inheritance environment environment reference
 inheritance api api api api inheritance inheritance --- reference inheritance
 --- environment --- --- inheritance)
 
+# See http://www.ibm.com/developerworks/library/os-eclipse-api-tools/
 templates = [
   /^(?<source>#{TYPE}) illegally extends (?<target>#{TYPE})$/,
   /^(?<source>#{TYPE}) illegally instantiates (?<target>#{TYPE})$/,
