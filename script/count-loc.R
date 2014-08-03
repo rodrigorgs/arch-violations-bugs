@@ -54,4 +54,4 @@ for (i in 1:nrow(fileloc)) {
 
 setwd(curdir)
 
-saveRDS(fileloc, "../data/fileloc.rds")
+saveRDS(fileloc, "../raw-data/fileloc.rds")
