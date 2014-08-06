@@ -20,7 +20,7 @@ klass.release.metrics <- readRDS("../data/klass-release-metrics.rds")
 klass.metrics <- readRDS("../data/klass-metrics.rds")
 
 head(klass.release.metrics)
-head(klass.metrics[, c("klass", "bugs", "bug_density", "violations")])
+head(klass.metrics[, c("klass", "bugs", "violations")])
 
 #' ## Correlation analysis
 

@@ -1,7 +1,7 @@
 rm(list=ls())
 library(dplyr)
 
-fileloc <- readRDS("../data/fileloc.rds")
+fileloc <- readRDS("../raw-data/fileloc.rds")
 klass.files <- readRDS("../data/klass-files.rds")
 
 klassloc <- fileloc %.%

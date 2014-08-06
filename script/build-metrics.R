@@ -12,6 +12,12 @@ viol.releases <- readRDS("../data/viol-releases.rds")
 bugs <- readRDS("../data/bugs-extended.rds")
 klassloc <- readRDS("../data/klassloc.rds")
 
+violations$klass <- violations$source
+# violations$klass <- violations$target
+# violations <- subset(violations, violtype == "general")
+# violations <- subset(violations, violtype == "hierarchy")
+violations <- subset(violations, violtype == "instantiation")
+
 ###########
 #
 # Map commits to releases
@@ -40,7 +46,7 @@ bug.count <- commits.with.release %.%
 
 ###########
 
-violation.count <- violations %.%
+violation.count <- subset(violations, !is.na(klass)) %.%
 	inner_join(viol.releases) %.%
 	group_by(klass, release) %.%
 	summarise(violations = n()) %.%
@@ -49,6 +55,7 @@ violation.count <- violations %.%
 
 ###########
 
+# klass.names <- readLines("../data/klasses.txt")
 klass.names <- unique(violations$klass) %.% na.omit()
 release.numbers <- as.numeric(1:19)
 klass.x.release <- expand.grid(klass=klass.names, release=release.numbers, stringsAsFactors=F)
@@ -65,6 +72,8 @@ klass.release.metrics$bugs[is.na(klass.release.metrics$bugs)] <- 0
 klass.release.metrics$reopened[is.na(klass.release.metrics$reopened)] <- FALSE
 klass.release.metrics <- mutate(klass.release.metrics, bug_density = 1000 * bugs / loc)
 
+nrow(klass.release.metrics)
+
 saveRDS(klass.release.metrics, "../data/klass-release-metrics.rds")
 
 ###########
@@ -77,6 +86,8 @@ klass.major.metrics <- klass.release.metrics %.%
 		violations = sum(violations),
 		reopened = any(reopened))
 
+nrow(klass.major.metrics)
+
 saveRDS(klass.major.metrics, "../data/klass-major-metrics.rds")
 
 ###########
@@ -88,5 +99,7 @@ klass.metrics <- klass.release.metrics %.%
 		violations = mean(violations),
 		reopened = any(reopened)) %.%
 	arrange(nchar(klass))
+
+nrow(klass.metrics)
 
 saveRDS(klass.metrics, "../data/klass-metrics.rds")

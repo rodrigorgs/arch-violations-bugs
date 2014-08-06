@@ -1,3 +1,138 @@
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/ActionContributionItem.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/PluginActionContributionItem.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/CLabel.java
+./eclipse.platform.swt/tests/org.eclipse.swt.tests/JUnit Tests/org/eclipse/swt/tests/junit/Test_org_eclipse_swt_custom_CLabel.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/actions/DeleteResourceAction.java
+./eclipse.jdt.core/org.eclipse.jdt.core.tests.compiler/src/org/eclipse/jdt/core/tests/eval/SanityTestEvaluationContext.java
+./eclipse.jdt.core/org.eclipse.jdt.core/model/org/eclipse/jdt/core/eval/IEvaluationContext.java
+./eclipse.jdt.core/org.eclipse.jdt.core/eval/org/eclipse/jdt/internal/eval/EvaluationContext.java
+./eclipse.platform.ua/org.eclipse.help.base/src/org/eclipse/help/internal/base/HelpEvaluationContext.java
+./eclipse.platform.ua/org.eclipse.ui.cheatsheets/src/org/eclipse/ui/internal/cheatsheets/CheatSheetEvaluationContext.java
+./eclipse.platform.ua/org.eclipse.ui.intro/src/org/eclipse/ui/internal/intro/impl/util/IntroEvaluationContext.java
+./eclipse.platform.ua/org.eclipse.help.ui/src/org/eclipse/help/ui/internal/HelpUIEvaluationContext.java
+./eclipse.platform.runtime/bundles/org.eclipse.core.expressions/src/org/eclipse/core/expressions/EvaluationContext.java
+./eclipse.platform.runtime/bundles/org.eclipse.core.expressions/src/org/eclipse/core/expressions/IEvaluationContext.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/IActionBars.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/IContributionManagerOverrides.java
+./eclipse.platform.resources/bundles/org.eclipse.core.resources/src/org/eclipse/core/resources/IFileState.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/JavaRefactoringDescriptor.java
+./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/parts/ConditionalListSelectionDialog.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/dialogs/MultiElementListSelectionDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/dialogs/ResourceListSelectionDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/dialogs/ListSelectionDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/dialogs/AbstractElementListSelectionDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/dialogs/ElementListSelectionDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/dialogs/YesNoCancelListSelectionDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/actions/MoveResourceAction.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/actions/OpenFileAction.java
+./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/actions/OpenWithMenu.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/actions/OpenWithMenu.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/views/actions/AntOpenWithMenu.java
+./eclipse.jdt.ui/org.eclipse.ltk.core.refactoring/src/org/eclipse/ltk/core/refactoring/PerformRefactoringHistoryOperation.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/internal/OverlayPreferenceStore.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/preferences/OverlayPreferenceStore.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/preferences/MockupPreferenceStore.java
+./eclipse.platform.ua/org.eclipse.ua.tests/help/org/eclipse/ua/tests/help/remote/RemotePreferenceStore.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/preference/PreferenceStore.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/preference/IPersistentPreferenceStore.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/preference/IPreferenceStore.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/preferences/ScopedPreferenceStore.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/preferences/OverlayPreferenceStore.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui refactoring/org/eclipse/jdt/internal/ui/refactoring/actions/RenameResourceAction.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/actions/RenameResourceAction.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/browsing/PackagesViewTableViewer.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/viewsupport/ProblemTableViewer.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui refactoring/org/eclipse/jdt/internal/ui/refactoring/PullPushCheckboxTableViewer.java
+./eclipse.platform.ui/examples/org.eclipse.jface.snippets/Eclipse JFace Snippets/org/eclipse/jface/snippets/viewers/Snippet001TableViewer.java
+./eclipse.platform.ui/examples/org.eclipse.jface.snippets/Eclipse JFace Snippets/org/eclipse/jface/snippets/viewers/Snippet030VirtualLazyTableViewer.java
+./eclipse.platform.ui/examples/org.eclipse.jface.snippets/Eclipse JFace Snippets/org/eclipse/jface/snippets/viewers/Snippet029VirtualTableViewer.java
+./eclipse.platform.ui/examples/org.eclipse.jface.examples.databinding/src/org/eclipse/jface/examples/databinding/snippets/Snippet009TableViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/AbstractTableViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/CheckboxTableViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/TableViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/ToolBarContributionItem.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/internal/provisional/action/IToolBarContributionItem.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/menus/DynamicToolBarContributionItem.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/structuremergeviewer/DiffTreeViewer.java
+./eclipse.pde.ui/ui/org.eclipse.ui.trace/src/org/eclipse/ui/trace/internal/TracingComponentTreeViewer.java
+./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/shared/CachedCheckboxTreeViewer.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/browsing/PackagesViewTreeViewer.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/viewsupport/ProblemTreeViewer.java
+./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/ChangeElementTreeViewer.java
+./eclipse.platform.ui/examples/org.eclipse.jface.snippets/Eclipse JFace Snippets/org/eclipse/jface/snippets/viewers/Snippet047VirtualLazyTreeViewer.java
+./eclipse.platform.ui/examples/org.eclipse.jface.snippets/Eclipse JFace Snippets/org/eclipse/jface/snippets/viewers/Snippet002TreeViewer.java
+./eclipse.platform.ui/examples/org.eclipse.jface.snippets/Eclipse JFace Snippets/org/eclipse/jface/snippets/viewers/Snippet032TableTreeViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/views/markers/MarkersTreeViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/TreeViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/AbstractTreeViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/CheckboxTreeViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/TableTreeViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/dialogs/ContainerCheckedTreeViewer.java
+./eclipse.platform/ant/org.eclipse.ant.core/src/org/eclipse/ant/core/Task.java
+./eclipse.platform/ant/org.eclipse.ant.core/src/org/eclipse/ant/core/Type.java
+./eclipse.platform/ant/org.eclipse.ant.core/src/org/eclipse/ant/internal/core/AntObject.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Editor/org/eclipse/ant/internal/ui/editor/AntEditor.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Editor/org/eclipse/ant/internal/ui/editor/actions/RenameInFileAction.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Editor/org/eclipse/ant/internal/ui/editor/text/AntAnnotationModel.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/launchConfigurations/AntClasspathTab.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/launchConfigurations/AntEnvironmentTab.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/launchConfigurations/AntJRETab.java
+./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/preferences/MessageLine.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/CompareViewerPane.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/EditionSelectionDialog.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/ResourceNode.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/contentmergeviewer/ContentMergeViewer.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/contentmergeviewer/TextMergeViewer.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/internal/IFlushable2.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/internal/ResizableDialog.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/structuremergeviewer/DiffTreeViewer.java
+./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/structuremergeviewer/StructureDiffViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.core.commands/src/org/eclipse/core/commands/common/CommandException.java
+./eclipse.platform.runtime/bundles/org.eclipse.core.expressions/src/org/eclipse/core/expressions/EvaluationContext.java
+./eclipse.platform.runtime/bundles/org.eclipse.core.jobs/src/org/eclipse/core/internal/jobs/InternalJob.java
+./eclipse.platform.resources/bundles/org.eclipse.core.resources/src/org/eclipse/core/resources/IFileState.java
+./eclipse.platform.runtime/bundles/org.eclipse.core.jobs/src/org/eclipse/core/runtime/jobs/Job.java
+./eclipse.platform.ui/bundles/org.eclipse.e4.ui.model.workbench/src/org/eclipse/e4/ui/model/application/ui/basic/MTrimBar.java
+./eclipse.platform.ui/bundles/org.eclipse.e4.ui.model.workbench/src/org/eclipse/e4/ui/model/application/ui/menu/MHandledItem.java
+./eclipse.platform.ui/bundles/org.eclipse.e4.ui.services/src/org/eclipse/e4/ui/services/EContextService.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/e4/ui/workbench/addons/perspectiveswitcher/PerspectiveSwitcherCSSHandler.java
+./eclipse.platform.ua/org.eclipse.help.ui/src/org/eclipse/help/ui/internal/HelpUIEvaluationContext.java
+./eclipse.platform.ua/org.eclipse.help.ui/src/org/eclipse/help/ui/internal/HyperlinkLabel.java
+./eclipse.jdt.core/org.eclipse.jdt.core/model/org/eclipse/jdt/core/BufferChangedEvent.java
+./eclipse.jdt.core/org.eclipse.jdt.core/model/org/eclipse/jdt/core/ISourceRange.java
+./eclipse.jdt.core/org.eclipse.jdt.core.tests.model/workspace/Compiler/src/org/eclipse/jdt/core/compiler/InvalidInputException.java
+./eclipse.jdt.core/org.eclipse.jdt.core/compiler/org/eclipse/jdt/core/compiler/InvalidInputException.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ChangeMethodSignatureDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ConvertAnonymousDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ConvertLocalVariableDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ConvertMemberTypeDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/CopyDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/DeleteDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/EncapsulateFieldDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ExtractClassDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ExtractConstantDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ExtractInterfaceDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ExtractLocalDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ExtractMethodDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/ExtractSuperclassDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/GeneralizeTypeDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/InferTypeArgumentsDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/InlineConstantDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/InlineLocalVariableDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/InlineMethodDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/IntroduceFactoryDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/IntroduceIndirectionDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/IntroduceParameterDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/IntroduceParameterObjectDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/JavaRefactoringContribution.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/JavaRefactoringDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/MoveDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/MoveMethodDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/MoveStaticMembersDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/PullUpDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/PushDownDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/RenameJavaElementDescriptor.java
+./eclipse.jdt.ui/org.eclipse.jdt.core.manipulation/refactoring/org/eclipse/jdt/core/refactoring/descriptors/UseSupertypeDescriptor.java
 ./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/debug/ui/launchConfigurations/AppletArgumentsTab.java
 ./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/debug/ui/launchConfigurations/AppletMainTab.java
 ./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/debug/ui/launchConfigurations/JavaArgumentsTab.java
@@ -5,16 +140,8 @@
 ./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/debug/ui/launchConfigurations/JavaConnectTab.java
 ./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/debug/ui/launchConfigurations/JavaJRETab.java
 ./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/debug/ui/launchConfigurations/JavaMainTab.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/actions/PopupInspectAction.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/classpath/ClasspathEntry.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/classpath/RuntimeClasspathViewer.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/display/DisplayViewerConfiguration.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/launcher/AppletSelectionDialog.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/launcher/RuntimeClasspathViewer.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/snippeteditor/JavaSnippetViewerConfiguration.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/snippeteditor/SnippetEditorPropertyPage.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/snippeteditor/SnippetOpenHierarchyOnSelectionAction.java
-./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/snippeteditor/SnippetOpenOnSelectionAction.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/internal compatibility/org/eclipse/jdt/internal/corext/SourceRange.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/RefactoringExecutionStarter.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/code/ConvertAnonymousToNestedRefactoring.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/code/ExtractConstantRefactoring.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/code/ExtractMethodRefactoring.java
@@ -29,7 +156,6 @@
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/code/ReplaceInvocationsRefactoring.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/generics/InferTypeArgumentsRefactoring.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/nls/NLSScanner.java
-./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/RefactoringExecutionStarter.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/rename/RenameCompilationUnitProcessor.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/rename/RenameEnumConstProcessor.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/rename/RenameFieldProcessor.java
@@ -92,13 +218,27 @@
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/structure/PullUpRefactoringProcessor.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/structure/PushDownRefactoringProcessor.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/core refactoring/org/eclipse/jdt/internal/corext/refactoring/structure/UseSuperTypeProcessor.java
-./eclipse.jdt.ui/org.eclipse.jdt.ui/internal compatibility/org/eclipse/jdt/internal/corext/SourceRange.java
-./eclipse.jdt.ui/org.eclipse.jdt.ui/ui refactoring/org/eclipse/jdt/internal/ui/refactoring/nls/ExternalizeWizardPage.java
-./eclipse.jdt.ui/org.eclipse.jdt.ui/ui refactoring/org/eclipse/jdt/internal/ui/refactoring/PullPushCheckboxTableViewer.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/actions/PopupInspectAction.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/actions/RuntimeClasspathAction.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/classpath/ClasspathEntry.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/classpath/ClasspathModel.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/classpath/RuntimeClasspathViewer.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/display/DisplayViewerConfiguration.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/jres/JREDescriptor.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/launcher/AbstractJavaClasspathTab.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/launcher/AbstractJavaMainTab.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/launcher/AppletSelectionDialog.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/launcher/RuntimeClasspathViewer.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/launcher/SharedJavaMainTab.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/launcher/VMArgumentsBlock.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/snippeteditor/JavaSnippetViewerConfiguration.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/snippeteditor/SnippetEditorPropertyPage.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/snippeteditor/SnippetOpenHierarchyOnSelectionAction.java
+./eclipse.jdt.debug/org.eclipse.jdt.debug.ui/ui/org/eclipse/jdt/internal/debug/ui/snippeteditor/SnippetOpenOnSelectionAction.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/CompatibilityTemplateStore.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/callhierarchy/CallHierarchyViewer.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/callhierarchy/LocationViewer.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/compare/JavaStructureDiffViewer.java
-./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/CompatibilityTemplateStore.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/AddClassFileMarkerAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/ClassFileMarkerRulerAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/CompilationUnitDocumentProvider.java
@@ -107,14 +247,19 @@
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/JavaOutlinePage.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/JavaSelectAnnotationRulerAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/JavaSourceViewer.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/javaeditor/JavaTextSelection.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/navigator/CommonLayoutActionGroup.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/navigator/OpenAndExpand.java
-./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/text/java/ParameterGuessingProposal.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui refactoring/org/eclipse/jdt/internal/ui/refactoring/PullPushCheckboxTableViewer.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui refactoring/org/eclipse/jdt/internal/ui/refactoring/nls/ExternalizeWizardPage.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/text/JavaOutlineInformationControl.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/text/java/ParameterGuessingProposal.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/util/ViewerPane.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/viewsupport/ProblemTableViewer.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/viewsupport/ProblemTreeViewer.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/internal/ui/wizards/buildpaths/FolderSelectionDialog.java
+./eclipse.jdt.debug/org.eclipse.jdt.launching/launching/org/eclipse/jdt/launching/IRuntimeClasspathEntry.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/JavaElementLabelProvider.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/ChangeTypeAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/ConvertAnonymousToNestedAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/ConvertLocalToFieldAction.java
@@ -136,30 +281,64 @@
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/IntroduceIndirectionAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/IntroduceParameterAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/ModifyParametersAction.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/OpenAction.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/OpenTypeHierarchyAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/PullUpAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/PushDownAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/ReplaceInvocationsAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/SelectionDispatchAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/SelfEncapsulateFieldAction.java
 ./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/actions/UseSupertypeAction.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/text/JavaSourceViewerConfiguration.java
+./eclipse.jdt.ui/org.eclipse.jdt.ui/ui/org/eclipse/jdt/ui/wizards/NewClassWizardPage.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/ActionContributionItem.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/GroupMarker.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/IAction.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/IContributionItem.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/IContributionManagerOverrides.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/SubContributionItem.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/ToolBarContributionItem.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/internal/provisional/action/IToolBarContributionItem.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/preference/PreferenceStore.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/resource/ColorRegistry.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/resource/FontRegistry.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/CheckboxTableViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/CheckboxTreeViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/IDecoration.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/TableViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/viewers/TreeViewer.java
+./eclipse.jdt.ui/org.eclipse.ltk.core.refactoring/src/org/eclipse/ltk/core/refactoring/PerformChangeOperation.java
+./eclipse.jdt.ui/org.eclipse.ltk.core.refactoring/src/org/eclipse/ltk/core/refactoring/PerformRefactoringHistoryOperation.java
+./eclipse.jdt.ui/org.eclipse.ltk.core.refactoring/src/org/eclipse/ltk/core/refactoring/RefactoringCore.java
+./eclipse.jdt.ui/org.eclipse.ltk.core.refactoring/src/org/eclipse/ltk/core/refactoring/RefactoringDescriptorProxy.java
+./eclipse.jdt.ui/org.eclipse.ltk.core.refactoring/src/org/eclipse/ltk/core/refactoring/resource/RenameResourceDescriptor.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/ChangeElementTreeViewer.java
+./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/InternalLanguageElementNode.java
+./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/InternalTextEditChangeNode.java
+./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/PreviewNode.java
+./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/RefactoringUIPlugin.java
+./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/UIPerformChangeOperation.java
+./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/UndoManagerAction.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/history/RefactoringHistoryControl.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/model/RefactoringDescriptorDiff.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/model/RefactoringDescriptorSynchronizationProxy.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/model/RefactoringHistoryDiff.java
-./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/RefactoringUIPlugin.java
-./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/UIPerformChangeOperation.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/internal/ui/refactoring/util/ViewerPane.java
-./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/ui/refactoring/history/RefactoringHistoryWizard.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/ui/refactoring/LanguageElementNode.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/ui/refactoring/RedoRefactoringAction.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/ui/refactoring/TextEditChangeNode.java
 ./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/ui/refactoring/UndoRefactoringAction.java
-./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/category/SiteBundleAdapter.java
-./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/category/SiteFeatureAdapter.java
+./eclipse.jdt.ui/org.eclipse.ltk.ui.refactoring/src/org/eclipse/ltk/ui/refactoring/history/RefactoringHistoryWizard.java
+./eclipse.pde.ui/ui/org.eclipse.pde.core/src/org/eclipse/pde/core/IModelChangedListener.java
+./eclipse.pde.ui/ui/org.eclipse.pde.core/src/org/eclipse/pde/core/IWritable.java
+./eclipse.pde.ui/ui/org.eclipse.pde.core/src/org/eclipse/pde/core/ModelChangedEvent.java
+./eclipse.pde.ui/ui/org.eclipse.pde.core/src/org/eclipse/pde/core/plugin/IPluginReference.java
+./eclipse.pde.ui/ui/org.eclipse.pde.core/src/org/eclipse/pde/core/target/ITargetLocation.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/EmptyOutlinePage.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/IContextPart.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/PDEProjectionViewer.java
+./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/category/SiteBundleAdapter.java
+./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/category/SiteFeatureAdapter.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/plugin/JavaAttributeWizardPage.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/plugin/PluginInputContextManager.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/site/SiteFeatureAdapter.java
@@ -171,17 +350,18 @@
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/search/dependencies/DependencyExtentSearchResultPage.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/search/dialogs/FilteredIUSelectionDialog.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/shared/target/UpdateTargetJob.java
+./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/NewWizard.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/imports/PluginImportWizardFirstPage.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/imports/RepositoryImportWizard.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/product/NewProductFileWizard.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/target/MoveTargetDefinitionWizard.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/target/NewTargetDefinitionWizard.java
+./eclipse.pde.ui/ui/org.eclipse.pde.launching/src/org/eclipse/pde/launching/IPDELauncherConstants.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/ui/launcher/ConfigurationTab.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/ui/launcher/IPDELauncherConstants.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/ui/launcher/MainTab.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/ui/templates/NewPluginProjectFromTemplateWizard.java
 ./eclipse.pde.ui/ui/org.eclipse.pde.ui/src/org/eclipse/pde/ui/templates/PluginReference.java
-./eclipse.platform.runtime/bundles/org.eclipse.core.jobs/src/org/eclipse/core/runtime/jobs/Job.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Accessibility/common/org/eclipse/swt/accessibility/AccessibleActionListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Accessibility/common/org/eclipse/swt/accessibility/AccessibleAttributeListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Accessibility/common/org/eclipse/swt/accessibility/AccessibleControlEvent.java
@@ -195,6 +375,12 @@
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Accessibility/common/org/eclipse/swt/accessibility/AccessibleTextEvent.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Accessibility/common/org/eclipse/swt/accessibility/AccessibleTextListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Accessibility/common/org/eclipse/swt/accessibility/AccessibleValueListener.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT AWT/emulated/org/eclipse/swt/awt/SWT_AWT.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT AWT/cocoa/org/eclipse/swt/awt/SWT_AWT.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT AWT/win32/org/eclipse/swt/awt/SWT_AWT.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT AWT/gtk/org/eclipse/swt/awt/SWT_AWT.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT AWT/motif/org/eclipse/swt/awt/SWT_AWT.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT AWT/carbon/org/eclipse/swt/awt/SWT_AWT.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Browser/common/org/eclipse/swt/browser/AuthenticationListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Browser/common/org/eclipse/swt/browser/CloseWindowListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Browser/common/org/eclipse/swt/browser/LocationListener.java
@@ -204,43 +390,22 @@
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Browser/common/org/eclipse/swt/browser/TitleListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Browser/common/org/eclipse/swt/browser/VisibilityWindowListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/BidiSegmentListener.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/CaretListener.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/CLabel.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/CTabFolder2Listener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/CTabFolderListener.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/CaretListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/ExtendedModifyListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/LineBackgroundListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/LineStyleListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/MovementListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/PaintObjectListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/StyleRange.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/StyledText.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/TextChangeListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/VerifyKeyListener.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/carbon/org/eclipse/swt/dnd/TransferData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/cocoa/org/eclipse/swt/dnd/TransferData.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Custom Widgets/common/org/eclipse/swt/custom/ViewForm.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/common/org/eclipse/swt/dnd/DragSourceListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/common/org/eclipse/swt/dnd/DropTargetListener.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/emulated/org/eclipse/swt/dnd/TransferData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/gtk/org/eclipse/swt/dnd/TransferData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/motif/org/eclipse/swt/dnd/TransferData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/photon/org/eclipse/swt/dnd/TransferData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/win32/org/eclipse/swt/dnd/TransferData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT Drag and Drop/wpf/org/eclipse/swt/dnd/TransferData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT OLE Win32/win32/org/eclipse/swt/ole/win32/OleAutomation.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT OLE Win32/win32/org/eclipse/swt/ole/win32/OleClientSite.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT OLE Win32/win32/org/eclipse/swt/ole/win32/OleControlSite.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT OLE Win32/win32/org/eclipse/swt/ole/win32/Variant.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/graphics/Device.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/graphics/FontData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/graphics/FontMetrics.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/graphics/GCData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/widgets/Display.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/widgets/Widget.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/graphics/Device.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/graphics/FontData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/graphics/FontMetrics.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/graphics/GCData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/widgets/Display.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/widgets/Widget.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/events/ArmListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/events/ControlListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/events/DisposeListener.java
@@ -266,122 +431,155 @@
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/events/TreeListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/events/TypedEvent.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/events/VerifyListener.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/graphics/Device.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/graphics/Device.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/graphics/Device.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/graphics/Device.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/graphics/Device.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/graphics/Device.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/graphics/Device.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/graphics/Drawable.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/graphics/FontData.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/graphics/FontData.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/graphics/FontData.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/graphics/FontData.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/graphics/FontData.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/graphics/FontData.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/graphics/FontData.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/graphics/FontMetrics.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/graphics/FontMetrics.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/graphics/FontMetrics.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/graphics/FontMetrics.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/graphics/FontMetrics.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/graphics/FontMetrics.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/graphics/FontMetrics.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/graphics/ImageData.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/graphics/ImageLoaderEvent.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/graphics/ImageLoaderListener.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/graphics/Point.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/graphics/Rectangle.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/graphics/RGB.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/graphics/Rectangle.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common_j2se/org/eclipse/swt/internal/CloneableCompatibility.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common_j2me/org/eclipse/swt/internal/CloneableCompatibility.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common_j2se/org/eclipse/swt/internal/SWTEventListener.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common_j2me/org/eclipse/swt/internal/SWTEventListener.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common_j2se/org/eclipse/swt/internal/SWTEventObject.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common_j2me/org/eclipse/swt/internal/SWTEventObject.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common_j2se/org/eclipse/swt/internal/SerializableCompatibility.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common_j2me/org/eclipse/swt/internal/SerializableCompatibility.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/FORMATETC.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/GUID.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/IDispatch.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/IOleCommandTarget.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/IOleDocumentView.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/IOleInPlaceObject.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/IOleObject.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/IStorage.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/IUnknown.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/IViewObject2.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/STGMEDIUM.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/ole/win32/TYPEATTR.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/win32/LOGFONT.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/win32/MSG.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/win32/PAINTSTRUCT.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/win32/org/eclipse/swt/internal/win32/TEXTMETRIC.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT OLE Win32/win32/org/eclipse/swt/ole/win32/OleAutomation.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT OLE Win32/win32/org/eclipse/swt/ole/win32/OleClientSite.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT OLE Win32/win32/org/eclipse/swt/ole/win32/OleControlSite.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT OLE Win32/win32/org/eclipse/swt/ole/win32/Variant.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/common/org/eclipse/swt/widgets/TypedListener.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/graphics/Device.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/graphics/FontData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/graphics/FontMetrics.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/graphics/GCData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/widgets/Display.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/widgets/Widget.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/graphics/Device.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/graphics/FontData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/graphics/FontMetrics.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/graphics/GCData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/widgets/Display.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/widgets/Widget.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/graphics/Device.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/graphics/FontData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/graphics/FontMetrics.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/graphics/GCData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/widgets/Display.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/cocoa/org/eclipse/swt/widgets/Widget.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/photon/org/eclipse/swt/widgets/Widget.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/graphics/Device.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/graphics/FontData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/graphics/FontMetrics.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/graphics/GCData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/widgets/Display.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/win32/org/eclipse/swt/widgets/Widget.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/graphics/Device.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/graphics/FontData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/graphics/FontMetrics.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/graphics/GCData.java
-./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/widgets/Display.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/gtk/org/eclipse/swt/widgets/Widget.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/motif/org/eclipse/swt/widgets/Widget.java
+./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/carbon/org/eclipse/swt/widgets/Widget.java
 ./eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT/wpf/org/eclipse/swt/widgets/Widget.java
-./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/CompareViewerPane.java
-./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/contentmergeviewer/ContentMergeViewer.java
-./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/contentmergeviewer/TextMergeViewer.java
-./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/EditionSelectionDialog.java
-./eclipse.platform.team/bundles/org.eclipse.compare/compare/org/eclipse/compare/structuremergeviewer/DiffTreeViewer.java
+./eclipse.platform.team/bundles/org.eclipse.team.core/src/org/eclipse/team/core/Team.java
+./eclipse.platform.team/bundles/org.eclipse.team.core/src/org/eclipse/team/core/diff/IThreeWayDiff.java
 ./eclipse.platform.team/bundles/org.eclipse.team.cvs.ui/src/org/eclipse/team/internal/ccvs/ui/console/CVSOutputConsole.java
 ./eclipse.platform.team/bundles/org.eclipse.team.cvs.ui/src/org/eclipse/team/internal/ccvs/ui/wizards/CommitWizard.java
-./eclipse.platform.team/bundles/org.eclipse.team.cvs.ui/src/org/eclipse/team/internal/ccvs/ui/wizards/GenerateDiffFileWizard.java
 ./eclipse.platform.team/bundles/org.eclipse.team.cvs.ui/src/org/eclipse/team/internal/ccvs/ui/wizards/ModuleSelectionPage.java
+./eclipse.platform.team/bundles/org.eclipse.team.core/src/org/eclipse/team/internal/core/subscribers/SubscriberSyncInfoCollector.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/dialogs/ResourceMappingResourceDisplayArea.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/history/FileRevisionEditorInput.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/mapping/ResourceModelSorter.java
-./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/actions/OpenFileInSystemEditorAction.java
-./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/actions/RefactorActionGroup.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/DialogSynchronizePageSite.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/LocalResourceSaveableComparison.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/LocalResourceTypedElement.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/SaveablesCompareEditorInput.java
+./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/SubscriberRefreshSchedule.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/SynchronizeModelElementSorter.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/TreeViewerAdvisor.java
+./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/actions/OpenFileInSystemEditorAction.java
+./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/internal/ui/synchronize/actions/RefactorActionGroup.java
+./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/ui/TeamUI.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/ui/synchronize/ModelSynchronizeParticipant.java
 ./eclipse.platform.team/bundles/org.eclipse.team.ui/src/org/eclipse/team/ui/synchronize/SubscriberParticipant.java
-./eclipse.platform.ua/org.eclipse.help.ui/src/org/eclipse/help/ui/internal/ContextHelpDialog.java
-./eclipse.platform.ua/org.eclipse.help.ui/src/org/eclipse/help/ui/internal/HelpUIEvaluationContext.java
-./eclipse.platform.ua/org.eclipse.help.ui/src/org/eclipse/help/ui/internal/HyperlinkLabel.java
-./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/action/ToolBarContributionItem.java
-./eclipse.platform.ui/bundles/org.eclipse.jface/src/org/eclipse/jface/dialogs/StatusDialog.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/dialogs/WizardExportPage.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/dialogs/WizardResourceImportPage.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/actions/RetargetActionWithDefault.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/dialogs/WelcomeEditor.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/WorkbenchActionBuilder.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/views/markers/MarkersTreeViewer.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/bookmarkexplorer/BookmarkPropertiesDialog.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/markers/MarkerSupportView.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/tasklist/TaskPropertiesDialog.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/e4/ui/workbench/addons/perspectiveswitcher/PerspectiveSwitcherCSSHandler.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/IActionBars.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/IWorkbenchPage.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/IWorkbenchPartSite.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/Saveable.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/actions/ActionFactory.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/actions/CommandNotMappedException.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/actions/ContributedAction.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/actions/DeleteResourceAction.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/actions/OpenFileAction.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/actions/RetargetAction.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/activities/IActivityPatternBinding.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/contexts/IContextActivation.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/dialogs/ContainerCheckedTreeViewer.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/dialogs/FilteredTree.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/dialogs/NewFolderDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/dialogs/WizardExportPage.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/dialogs/WizardResourceImportPage.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/handlers/IHandlerActivation.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/ActionSetContributionItem.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/activities/ActivityPatternBinding.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/contexts/ContextService.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/CoolBarToTrimManager.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/decorators/DecorationBuilder.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/dialogs/ContentTypesPreferencePage.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/dialogs/CustomizePerspectiveDialog.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/EditorActionBars.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/EditorMenuManager.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/menus/MenuHelper.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench.compatibility/src/org/eclipse/ui/internal/ICompatibleWorkbenchPage.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/ICompatibleWorkbenchPage.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/InternalSaveable.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/MessageLine.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/PlaceholderContributionItem.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/PluginActionContributionItem.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/preferences/WorkingCopyPreferences.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/SaveablesList.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/themes/CascadingColorRegistry.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/themes/CascadingFontRegistry.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/Workbench.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/WorkbenchWindow.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/IWorkbenchPage.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/actions/CommandAction.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/activities/ActivityPatternBinding.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/contexts/ContextService.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/decorators/DecorationBuilder.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/dialogs/ContentTypesPreferencePage.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/dialogs/CustomizePerspectiveDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/WorkbenchActionBuilder.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/actions/RetargetActionWithDefault.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/dialogs/IElementFilter.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/ide/dialogs/WelcomeEditor.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/menus/InternalControlContribution.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/menus/MenuHelper.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/preferences/WorkingCopyPreferences.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/services/IEvaluationResultCache.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/services/INestable.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/themes/CascadingColorRegistry.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/internal/themes/CascadingFontRegistry.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/views/markers/ExtendedMarkersView.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/internal/views/markers/MarkersTreeViewer.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/menus/CommandContributionItemParameter.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/menus/WorkbenchWindowControlContribution.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/part/CoolItemGroupMarker.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/extensions/org/eclipse/ui/part/FileEditorInput.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/part/IPage.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/part/MultiPageEditorSite.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/part/PageSite.java
-./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/Saveable.java
 ./eclipse.platform.ui/bundles/org.eclipse.ui.workbench/Eclipse UI/org/eclipse/ui/services/IEvaluationReference.java
-./eclipse.platform/ant/org.eclipse.ant.core/src/org/eclipse/ant/core/Task.java
-./eclipse.platform/ant/org.eclipse.ant.core/src/org/eclipse/ant/core/Type.java
-./eclipse.platform/ant/org.eclipse.ant.ui/Ant Editor/org/eclipse/ant/internal/ui/editor/actions/RenameInFileAction.java
-./eclipse.platform/ant/org.eclipse.ant.ui/Ant Editor/org/eclipse/ant/internal/ui/editor/AntEditor.java
-./eclipse.platform/ant/org.eclipse.ant.ui/Ant Editor/org/eclipse/ant/internal/ui/editor/text/AntAnnotationModel.java
-./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/launchConfigurations/AntClasspathTab.java
-./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/launchConfigurations/AntEnvironmentTab.java
-./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/launchConfigurations/AntJRETab.java
-./eclipse.platform/ant/org.eclipse.ant.ui/Ant Tools Support/org/eclipse/ant/internal/ui/preferences/MessageLine.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/bookmarkexplorer/BookmarkPropertiesDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/markers/MarkerSupportView.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/markers/internal/DialogMarkerProperties.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/markers/internal/DialogTaskProperties.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/navigator/ResourceSorter.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/views/tasklist/TaskPropertiesDialog.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/wizards/newresource/BasicNewFileResourceWizard.java
+./eclipse.platform.ui/bundles/org.eclipse.ui.ide/src/org/eclipse/ui/wizards/newresource/BasicNewResourceWizard.java

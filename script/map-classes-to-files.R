@@ -1,6 +1,5 @@
 files <- readLines("../raw-data/files.txt")
-violations <- readRDS("../data/violations.rds")
-klasses <- unique(violations$klass)
+klasses <- readLines("../data/klasses.txt")
 
 klass.files <- data.frame(file=files, klass=NA, stringsAsFactors=F)
 

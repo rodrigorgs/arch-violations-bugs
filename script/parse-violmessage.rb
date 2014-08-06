@@ -9,8 +9,6 @@ TYPE = /
 METHOD = /
   # Method name
   \w+
-  # Strange numbers that appear on SWT_AWT_.11.
-  (?:\.\d+\.)?
   # Parameter list
   \(.*?\)/x
 
@@ -18,7 +16,20 @@ ENVIRONMENT = /[^ ]+/
 VERSION = /[^ ]+/
 BUNDLE = /[^ ]+/
 
+# violation types:
+# - extends/implements
+# - instantiates
+# - wrong parameter
+# - references
+# - API vs non-API
 
+# http://stackoverflow.com/questions/2587076/eclipse-warning-methodname-has-non-api-return-type-parameterizedtype
+
+## Violation types:
+violtypes = %w(
+hierarchy instantiation general general hierarchy --- --- general hierarchy general general general general hierarchy hierarchy --- instantiation hierarchy --- --- --- --- hierarchy)
+
+# See http://www.ibm.com/developerworks/library/os-eclipse-api-tools/
 templates = [
   /^(?<source>#{TYPE}) illegally extends (?<target>#{TYPE})$/,
   /^(?<source>#{TYPE}) illegally instantiates (?<target>#{TYPE})$/,
@@ -46,9 +57,14 @@ templates = [
 
 def match_one(text, regexes)
   matches = []
+  index = 0
   regexes.each do |regex|
     m = regex.match(text)
-    matches << m unless m.nil?
+    if !m.nil?
+      matches << m
+      yield index
+    end
+    index += 1
   end
   raise RuntimeError, "A string matches two regexes: '#{text}'" if matches.size > 1
   return matches.empty? ? nil : matches[0]
@@ -56,24 +72,37 @@ end
 
 if __FILE__ == $0
   results = []
+  klasses = []
+  i = 0
   IO.readlines('../raw-data/violfile.txt').each do |line|
+    i += 1
     line.chomp!
     line.gsub!(/\*.*$/, '')
-
+    # Replace strange numbers that appear on some signatures, e.g. SWT_AWT_.11.
     line.gsub!(/\.\d+\./, '.method')
-    next if line =~ /^The minor version should be incremented in version.*/
 
-    m = match_one(line, templates)
+    violtype = nil
+    m = match_one(line, templates) do |index|
+      violtype = violtypes[index]
+    end
     raise RuntimeError, "No match for #{line}" if m.nil?
 
-    source = m['source'].gsub(/\$[^.]+/, '')
+    # remove internal class names (after $)
+    source = m.names.include?('source') ? m['source'] : nil
+    source = source.gsub(/\$[^.]+/, '') if source
     target = m.names.include?('target') ? m['target'] : nil
-    target = target && target.gsub(/\$[^.]+/, '')
-    results << [line, source, target]
+    target = target.gsub(/\$[^.]+/, '') if target
+    
+    results << [i, line, violtype, source, target]
+    klasses << source unless source.nil?
+    klasses << target unless target.nil?
   end
 
+  puts "#{i} line(s) processed."
+
   File.open('../data/viol-klasses.tsv', 'w') do |f|
-    f.puts "description\tsource\ttarget"
+    f.puts "violation\tdescription\tvioltype\tsource\ttarget"
     f.puts results.map { |l| l.join("\t") }.join("\n")
   end
+  File.open('../data/klasses.txt', 'w') { |f| f.puts klasses.sort.uniq.join("\n") }
 end
