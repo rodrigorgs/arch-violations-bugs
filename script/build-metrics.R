@@ -27,12 +27,15 @@ commits$bug <- as.integer(commits$bug)
 
 commits.with.release <- commits %.%
 	inner_join(bugs) %.%
-	inner_join(releases, by="version")
+	inner_join(releases, by="version") %.%
+	select(commit, bug, reopened, release)
 
 ## Option 2: via commit time
 # commits.with.release <- sqldf("select * from commits
 # 	left join releases
 # 	where time between initial_time and final_time")
+
+head(commits.with.release, 2)
 
 ###########
 
@@ -44,6 +47,8 @@ bug.count <- commits.with.release %.%
 	arrange(klass, release) %.%
 	select(klass, release, bugs, reopened)
 
+head(bug.count, 2)
+
 ###########
 
 violation.count <- subset(violations, !is.na(klass)) %.%
@@ -52,6 +57,8 @@ violation.count <- subset(violations, !is.na(klass)) %.%
 	summarise(violations = n()) %.%
 	arrange(klass, release) %.%
 	select(klass, release, violations)
+
+head(violation.count, 2)
 
 ###########
 
@@ -74,7 +81,11 @@ klass.release.metrics <- mutate(klass.release.metrics, bug_density = 1000 * bugs
 
 nrow(klass.release.metrics)
 
+head(klass.release.metrics, 2)
+
 saveRDS(klass.release.metrics, "../data/klass-release-metrics.rds")
+
+#' For each (klass, release), number of bugs, whether it was reopened, loc and so on.
 
 ###########
 

@@ -18,15 +18,17 @@ library(ggplot2)
 
 klass.release.metrics <- readRDS("../data/klass-release-metrics.rds")
 klass.metrics <- readRDS("../data/klass-metrics.rds")
-
-head(klass.release.metrics)
-head(klass.metrics[, c("klass", "bugs", "violations")])
+klass.major.metrics <- readRDS("../data/klass-metrics.rds")
 
 #' ## Correlation analysis
 
 #' ### Correlation between number of violations in a class in a certain release and number of lines of code
 
 cor.test(~ bug_density + violations, data=klass.release.metrics, method="spearman")
+
+#' ### Correlation between num. violations and LOC, for major releases
+
+cor.test(~ bugs + violations, data=klass.major.metrics, method="spearman")
 
 #' ### Correlation between number of violations and number of bugs (across all releases)
 

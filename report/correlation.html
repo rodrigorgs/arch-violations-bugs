@@ -195,46 +195,7 @@ hr {
 
 <pre><code class="r">klass.release.metrics &lt;- readRDS(&quot;../data/klass-release-metrics.rds&quot;)
 klass.metrics &lt;- readRDS(&quot;../data/klass-metrics.rds&quot;)
-
-head(klass.release.metrics)
-</code></pre>
-
-<pre><code>##                                         klass release          final.time
-## 1 org.eclipse.help.ui.internal.HyperlinkLabel       1 2008-09-11 16:59:59
-## 2 org.eclipse.help.ui.internal.HyperlinkLabel       2 2009-02-11 16:59:59
-## 3 org.eclipse.help.ui.internal.HyperlinkLabel       3 2009-06-11 15:39:59
-## 4 org.eclipse.help.ui.internal.HyperlinkLabel       4 2009-09-17 07:59:59
-## 5 org.eclipse.help.ui.internal.HyperlinkLabel       5 2010-02-11 13:42:59
-## 6 org.eclipse.help.ui.internal.HyperlinkLabel       6 2010-06-08 09:10:59
-##   version        initial.time bugs reopened violations loc.comment
-## 1     3.4 2008-06-17 20:00:00    0    FALSE          0           0
-## 2   3.4.1 2008-09-11 17:00:00    0    FALSE          0           0
-## 3   3.4.2 2009-02-11 17:00:00    0    FALSE          0           0
-## 4     3.5 2009-06-11 15:40:00    0    FALSE          0           0
-## 5   3.5.1 2009-09-17 08:00:00    0    FALSE          0           0
-## 6   3.5.2 2010-02-11 13:43:00    0    FALSE          0           0
-##   loc.code loc loc.blank bug_density
-## 1       15  17         2           0
-## 2       15  17         2           0
-## 3       15  17         2           0
-## 4       15  17         2           0
-## 5       15  17         2           0
-## 6       15  17         2           0
-</code></pre>
-
-<pre><code class="r">head(klass.metrics[, c(&quot;klass&quot;, &quot;bugs&quot;, &quot;violations&quot;)])
-</code></pre>
-
-<pre><code>## Source: local data frame [6 x 3]
-## 
-##                                                           klass bugs
-## 1                         org.eclipse.ui.internal.SaveablesList    2
-## 2                   org.eclipse.help.ui.internal.HyperlinkLabel    0
-## 3            org.eclipse.ui.internal.ide.WorkbenchActionBuilder    7
-## 4        org.eclipse.jdt.internal.ui.javaeditor.DocumentAdapter    1
-## 5    org.eclipse.jdt.internal.corext.refactoring.nls.NLSScanner    2
-## 6 org.eclipse.pde.internal.ui.refactoring.RenamePluginProcessor    3
-## Variables not shown: violations (dbl)
+klass.major.metrics &lt;- readRDS(&quot;../data/klass-metrics.rds&quot;)
 </code></pre>
 
 <h2>Correlation analysis</h2>
@@ -256,6 +217,25 @@ head(klass.release.metrics)
 ## sample estimates:
 ##      rho 
 ## -0.06426
+</code></pre>
+
+<h3>Correlation between num. violations and LOC, for major releases</h3>
+
+<pre><code class="r">cor.test(~ bugs + violations, data=klass.major.metrics, method=&quot;spearman&quot;)
+</code></pre>
+
+<pre><code>## Warning: Cannot compute exact p-value with ties
+</code></pre>
+
+<pre><code>## 
+##  Spearman&#39;s rank correlation rho
+## 
+## data:  bugs and violations
+## S = 82694, p-value = 0.2338
+## alternative hypothesis: true rho is not equal to 0
+## sample estimates:
+##    rho 
+## 0.1321
 </code></pre>
 
 <h3>Correlation between number of violations and number of bugs (across all releases)</h3>
@@ -303,7 +283,7 @@ figure/scatter-bugs-violations.html
 polycharts
  '
 id=iframe-
-chartbcecc91afb1
+chartcfec6950650c
 ></iframe>
 
 <style>iframe.rChart{ width: 100%; height: 400px;}</style>
