@@ -10,6 +10,10 @@ library(dplyr)
 
 klass.release.metrics <- readRDS("../data/klass-release-metrics.rds")
 
+if (all(is.na(klass.release.metrics$loc))) {
+	stop("No LOC information computed!")
+}
+
 klass.release.metrics <- subset(klass.release.metrics, !is.na(loc))
 klass.release.metrics$bug_density <- NULL
 

@@ -27,9 +27,7 @@ BUNDLE = /[^ ]+/
 
 ## Violation types:
 violtypes = %w(
-inheritance instantiate api api inheritance environment environment reference
-inheritance api api api api inheritance inheritance --- reference inheritance
---- environment --- --- inheritance)
+hierarchy instantiation general general hierarchy --- --- general hierarchy general general general general hierarchy hierarchy --- instantiation hierarchy --- --- --- --- hierarchy)
 
 # See http://www.ibm.com/developerworks/library/os-eclipse-api-tools/
 templates = [

@@ -1,7 +1,7 @@
-all: data/bugs-extended.rds data/bugs.rds data/changed-files.rds data/changed-klasses.rds data/commit-log.rds data/eclipse-releases.csv data/eclipse-releases.rds data/fileloc.rds data/klass-files.rds data/klass-major-metrics.rds data/klass-metrics.rds data/klass-release-metrics.rds data/klasses.txt data/klassloc.rds data/viol-klasses.tsv data/viol-releases.rds data/violations.rds data/violtypes.txt report/build-metrics.html report/compute-klassloc.html report/correlation.html report/count-loc.html report/extra-bug-reports.html report/find-files.html report/map-bug-reports.html report/map-changed-classes.html report/map-classes-to-files.html report/parse-extra-bugs.html report/parse-git-log.html report/parse-release-dates.html report/parse-violfile.html report/reopening.html report/timeseries.html
+all: data/bugs-extended.rds data/bugs.rds data/changed-files.rds data/changed-klasses.rds data/commit-log.rds data/eclipse-releases.csv data/eclipse-releases.rds data/klass-files.rds data/klass-major-metrics.rds data/klass-metrics.rds data/klass-release-metrics.rds data/klasses.txt data/klassloc.rds data/viol-klasses.tsv data/viol-releases.rds data/violations.rds data/violtypes.txt raw-data/fileloc.rds report/build-metrics.html report/compute-klassloc.html report/correlation.html report/count-loc.html report/extra-bug-reports.html report/find-files.html report/map-bug-reports.html report/map-changed-classes.html report/map-classes-to-files.html report/parse-extra-bugs.html report/parse-git-log.html report/parse-release-dates.html report/parse-violfile.html report/reopening.html report/timeseries.html
 
 clean:
-	rm -f data/bugs-extended.rds data/bugs.rds data/changed-files.rds data/changed-klasses.rds data/commit-log.rds data/eclipse-releases.csv data/eclipse-releases.rds data/fileloc.rds data/klass-files.rds data/klass-major-metrics.rds data/klass-metrics.rds data/klass-release-metrics.rds data/klasses.txt data/klassloc.rds data/viol-klasses.tsv data/viol-releases.rds data/violations.rds data/violtypes.txt report/build-metrics.html report/compute-klassloc.html report/correlation.html report/count-loc.html report/extra-bug-reports.html report/find-files.html report/map-bug-reports.html report/map-changed-classes.html report/map-classes-to-files.html report/parse-extra-bugs.html report/parse-git-log.html report/parse-release-dates.html report/parse-violfile.html report/reopening.html report/timeseries.html
+	rm -f data/bugs-extended.rds data/bugs.rds data/changed-files.rds data/changed-klasses.rds data/commit-log.rds data/eclipse-releases.csv data/eclipse-releases.rds data/klass-files.rds data/klass-major-metrics.rds data/klass-metrics.rds data/klass-release-metrics.rds data/klasses.txt data/klassloc.rds data/viol-klasses.tsv data/viol-releases.rds data/violations.rds data/violtypes.txt raw-data/fileloc.rds report/build-metrics.html report/compute-klassloc.html report/correlation.html report/count-loc.html report/extra-bug-reports.html report/find-files.html report/map-bug-reports.html report/map-changed-classes.html report/map-classes-to-files.html report/parse-extra-bugs.html report/parse-git-log.html report/parse-release-dates.html report/parse-violfile.html report/reopening.html report/timeseries.html
 
 data/klass-release-metrics.rds: data/commit-log.rds data/changed-klasses.rds data/eclipse-releases.rds data/violations.rds data/viol-releases.rds data/bugs-extended.rds data/klassloc.rds data/klasses.txt script/build-metrics.R
 	./run-script.rb script/build-metrics.R
@@ -15,16 +15,16 @@ data/klass-metrics.rds: data/commit-log.rds data/changed-klasses.rds data/eclips
 report/build-metrics.html: data/commit-log.rds data/changed-klasses.rds data/eclipse-releases.rds data/violations.rds data/viol-releases.rds data/bugs-extended.rds data/klassloc.rds data/klasses.txt script/build-metrics.R
 	./run-script.rb script/build-metrics.R
 
-data/klassloc.rds: data/fileloc.rds data/klass-files.rds script/compute-klassloc.R
+data/klassloc.rds: raw-data/fileloc.rds data/klass-files.rds script/compute-klassloc.R
 	./run-script.rb script/compute-klassloc.R
 
-report/compute-klassloc.html: data/fileloc.rds data/klass-files.rds script/compute-klassloc.R
+report/compute-klassloc.html: raw-data/fileloc.rds data/klass-files.rds script/compute-klassloc.R
 	./run-script.rb script/compute-klassloc.R
 
 report/correlation.html: data/klass-release-metrics.rds data/klass-metrics.rds script/correlation.R
 	./run-script.rb script/correlation.R
 
-data/fileloc.rds: raw-data/files.txt data/eclipse-releases.rds script/count-loc.R
+raw-data/fileloc.rds: raw-data/files.txt data/eclipse-releases.rds script/count-loc.R
 	./run-script.rb script/count-loc.R
 
 report/count-loc.html: raw-data/files.txt data/eclipse-releases.rds script/count-loc.R

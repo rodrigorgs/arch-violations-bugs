@@ -14,11 +14,9 @@ klassloc <- readRDS("../data/klassloc.rds")
 
 violations$klass <- violations$source
 # violations$klass <- violations$target
-# violations <- subset(violations, violtype == "api")
-# violations <- subset(violations, violtype == "inheritance")
-# violations <- subset(violations, violtype == "reference")
-# violations <- subset(violations, violtype == "instantiate")
-# violations <- subset(violations, violtype == "environment")
+# violations <- subset(violations, violtype == "general")
+# violations <- subset(violations, violtype == "hierarchy")
+violations <- subset(violations, violtype == "instantiation")
 
 ###########
 #
@@ -74,6 +72,8 @@ klass.release.metrics$bugs[is.na(klass.release.metrics$bugs)] <- 0
 klass.release.metrics$reopened[is.na(klass.release.metrics$reopened)] <- FALSE
 klass.release.metrics <- mutate(klass.release.metrics, bug_density = 1000 * bugs / loc)
 
+nrow(klass.release.metrics)
+
 saveRDS(klass.release.metrics, "../data/klass-release-metrics.rds")
 
 ###########
@@ -86,6 +86,8 @@ klass.major.metrics <- klass.release.metrics %.%
 		violations = sum(violations),
 		reopened = any(reopened))
 
+nrow(klass.major.metrics)
+
 saveRDS(klass.major.metrics, "../data/klass-major-metrics.rds")
 
 ###########
@@ -97,5 +99,7 @@ klass.metrics <- klass.release.metrics %.%
 		violations = mean(violations),
 		reopened = any(reopened)) %.%
 	arrange(nchar(klass))
+
+nrow(klass.metrics)
 
 saveRDS(klass.metrics, "../data/klass-metrics.rds")
