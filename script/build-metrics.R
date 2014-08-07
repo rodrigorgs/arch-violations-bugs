@@ -1,4 +1,5 @@
 rm(list=ls())
+library(reshape)
 library(dplyr)
 library(sqldf)
 
@@ -12,15 +13,16 @@ viol.releases <- readRDS("../data/viol-releases.rds")
 bugs <- readRDS("../data/bugs-extended.rds")
 klassloc <- readRDS("../data/klassloc.rds")
 
-violations$klass <- violations$source
+# violations$klass <- violations$source
 # violations$klass <- violations$target
+violations <- subset(violations, violtype != "---")
 # violations <- subset(violations, violtype == "general")
 # violations <- subset(violations, violtype == "hierarchy")
-violations <- subset(violations, violtype == "instantiation")
+# violations <- subset(violations, violtype == "instantiation")
 
 ###########
-#
-# Map commits to releases
+
+#' # Map commits to releases commit => (commit, release)
 
 # Option 1: via bug report
 commits$bug <- as.integer(commits$bug)
@@ -39,6 +41,8 @@ head(commits.with.release, 2)
 
 ###########
 
+#' # Count bugs per (klass, release)
+
 bug.count <- commits.with.release %.%
 	inner_join(changed.klasses) %.%
 	group_by(klass, release) %.%
@@ -51,19 +55,44 @@ head(bug.count, 2)
 
 ###########
 
-violation.count <- subset(violations, !is.na(klass)) %.%
-	inner_join(viol.releases) %.%
-	group_by(klass, release) %.%
+#' ## Count violations per (klass, release, source/target, violtype)
+
+v <- violations
+v$description <- NULL
+violations.split.by.endpoint <- melt(v, id=c("violation", "violtype")) %.%
+	arrange(violation) %.%
+	rename(c("variable" = "endpoint", "value" = "klass"))
+violations.split.by.endpoint$klass <- as.character(violations.split.by.endpoint$klass)
+
+head(violations.split.by.endpoint, 6)
+
+violation.count.detailed <- violations.split.by.endpoint %.%
+	inner_join(viol.releases, by="violation") %.%
+	group_by(klass, release, endpoint, violtype) %.%
 	summarise(violations = n()) %.%
+	arrange(klass, release)
+
+nrow(violation.count.detailed)
+
+#' TODO: use violation.count.detailed (to save klass.release.metrics.detailed)
+
+###########
+
+#' # Count violations per (klass, release) -- only klass that are sources of violations
+
+violation.count <- violation.count.detailed %.%
+	filter(endpoint == 'source') %.%
+	group_by(klass, release) %.%
+	summarise(violations = sum(violations)) %.%
 	arrange(klass, release) %.%
 	select(klass, release, violations)
 
-head(violation.count, 2)
+nrow(violation.count)
 
 ###########
 
 # klass.names <- readLines("../data/klasses.txt")
-klass.names <- unique(violations$klass) %.% na.omit()
+klass.names <- unique(violation.count.detailed$klass) %.% na.omit()
 release.numbers <- as.numeric(1:19)
 klass.x.release <- expand.grid(klass=klass.names, release=release.numbers, stringsAsFactors=F)
 
