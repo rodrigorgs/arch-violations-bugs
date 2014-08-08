@@ -13,16 +13,11 @@ viol.releases <- readRDS("../data/viol-releases.rds")
 bugs <- readRDS("../data/bugs-extended.rds")
 klassloc <- readRDS("../data/klassloc.rds")
 
-# violations$klass <- violations$source
-# violations$klass <- violations$target
 violations <- subset(violations, violtype != "---")
-# violations <- subset(violations, violtype == "general")
-# violations <- subset(violations, violtype == "hierarchy")
-# violations <- subset(violations, violtype == "instantiation")
 
 ###########
 
-#' # Map commits to releases commit => (commit, release)
+#' # Map commits to releases: commit => (commit, release)
 
 # Option 1: via bug report
 commits$bug <- as.integer(commits$bug)
@@ -33,9 +28,7 @@ commits.with.release <- commits %.%
 	select(commit, bug, reopened, release)
 
 ## Option 2: via commit time
-# commits.with.release <- sqldf("select * from commits
-# 	left join releases
-# 	where time between initial_time and final_time")
+# commits.with.release <- sqldf("select * from commits left join releases where time between initial_time and final_time")
 
 head(commits.with.release, 2)
 
@@ -74,49 +67,59 @@ violation.count.detailed <- violations.split.by.endpoint %.%
 
 nrow(violation.count.detailed)
 
-#' TODO: use violation.count.detailed (to save klass.release.metrics.detailed)
-
 ###########
 
-#' # Count violations per (klass, release) -- only klass that are sources of violations
+#' ## Metrics for (klass, release, source/target, violtype) => (loc, reopened, ...)
 
-violation.count <- violation.count.detailed %.%
-	filter(endpoint == 'source') %.%
-	group_by(klass, release) %.%
-	summarise(violations = sum(violations)) %.%
-	arrange(klass, release) %.%
-	select(klass, release, violations)
+keys <- expand.grid(
+	klass = unique(violation.count.detailed$klass) %.% na.omit(),
+	release = unique(violation.count.detailed$release),
+	endpoint = unique(violation.count.detailed$endpoint),
+	violtype = unique(violation.count.detailed$violtype),
+	stringsAsFactors=F)
 
-nrow(violation.count)
-
-###########
-
-# klass.names <- readLines("../data/klasses.txt")
-klass.names <- unique(violation.count.detailed$klass) %.% na.omit()
-release.numbers <- as.numeric(1:19)
-klass.x.release <- expand.grid(klass=klass.names, release=release.numbers, stringsAsFactors=F)
-
-klass.release.metrics <- klass.x.release %.%
-	left_join(releases) %.%
-	left_join(bug.count) %.%
-	left_join(violation.count) %.%
+metrics <- keys %.%
+	left_join(violation.count.detailed, by=c("klass", "release", "endpoint", "violtype")) %.%
+	left_join(bug.count, by=c("klass", "release")) %.%
+	left_join(releases, by="release") %.%
 	left_join(klassloc, by=c("klass", "release")) %.%
-	arrange(klass, release)
+	mutate(
+		bug_density = 1000 * bugs / loc)
 
-klass.release.metrics$violations[is.na(klass.release.metrics$violations)] <- 0
-klass.release.metrics$bugs[is.na(klass.release.metrics$bugs)] <- 0
-klass.release.metrics$reopened[is.na(klass.release.metrics$reopened)] <- FALSE
-klass.release.metrics <- mutate(klass.release.metrics, bug_density = 1000 * bugs / loc)
+metrics$violations[is.na(metrics$violations)] <- 0
+metrics$bugs[is.na(metrics$bugs)] <- 0
+metrics$reopened[is.na(metrics$reopened)] <- F
+
+nrow(metrics)
+
+saveRDS(metrics, "../data/metrics.rds")
+
+###########
+
+#' ## Metrics grouped by (klass, release)
+
+klass.release.metrics <- metrics %.%
+	group_by(klass, release) %.%
+	summarise(
+		version = min(version),
+		initial.time = min(initial.time),
+		final.time = max(final.time),
+		reopened = any(reopened),
+		bugs = sum(bugs),
+		violations = sum(violations),
+		loc.blank = max(loc.blank),
+		loc = max(loc),
+		loc.comment = max(loc.comment),
+		loc.code = max(loc.code),
+		bug_density = mean(bug_density))
 
 nrow(klass.release.metrics)
 
-head(klass.release.metrics, 2)
-
 saveRDS(klass.release.metrics, "../data/klass-release-metrics.rds")
 
-#' For each (klass, release), number of bugs, whether it was reopened, loc and so on.
-
 ###########
+
+#' ## Group releases by minor revision (e.g., 4.3.1 => 4.3)
 
 klass.major.metrics <- klass.release.metrics %.%
 	group_by(version=substring(version, 1, 3), klass) %.%
@@ -131,6 +134,8 @@ nrow(klass.major.metrics)
 saveRDS(klass.major.metrics, "../data/klass-major-metrics.rds")
 
 ###########
+
+#' ## Group metrics by class
 
 klass.metrics <- klass.release.metrics %.%
 	group_by(klass) %.%
