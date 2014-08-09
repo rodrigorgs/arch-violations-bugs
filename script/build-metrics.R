@@ -1,4 +1,6 @@
 rm(list=ls())
+source('../lib/summarise_grouped_metrics.R')
+source('../lib/na.R')
 library(reshape)
 library(dplyr)
 library(sqldf)
@@ -84,11 +86,11 @@ metrics <- keys %.%
 	left_join(releases, by="release") %.%
 	left_join(klassloc, by=c("klass", "release")) %.%
 	mutate(
-		bug_density = 1000 * bugs / loc)
-
-metrics$violations[is.na(metrics$violations)] <- 0
-metrics$bugs[is.na(metrics$bugs)] <- 0
-metrics$reopened[is.na(metrics$reopened)] <- F
+		bugs = na.as.zero(bugs),
+		violations = na.as.zero(violations),
+		reopened = na.as.false(reopened),
+		bug_density = 1000 * bugs / loc,
+		majversion = substring(version, 1, 3))
 
 nrow(metrics)
 
@@ -100,18 +102,7 @@ saveRDS(metrics, "../data/metrics.rds")
 
 klass.release.metrics <- metrics %.%
 	group_by(klass, release) %.%
-	summarise(
-		version = min(version),
-		initial.time = min(initial.time),
-		final.time = max(final.time),
-		reopened = any(reopened),
-		bugs = sum(bugs),
-		violations = sum(violations),
-		loc.blank = max(loc.blank),
-		loc = max(loc),
-		loc.comment = max(loc.comment),
-		loc.code = max(loc.code),
-		bug_density = mean(bug_density))
+	summarise_grouped_metrics()
 
 nrow(klass.release.metrics)
 
