@@ -7,20 +7,6 @@ require 'date'
 # TODO: discard comments from source code, so we ignore changes to comments. See https://code.google.com/p/java-comment-preprocessor/
 
 #
-# Input file format. Each line should have the following format:
-#
-# hash,date
-#
-# where hash is the commit hash, and date is creation date of the bug fixed by the commit
-#
-# Output:
-#
-# commit,inducing-commit
-#
-# Where inducing-commit is a commit that added a line to a file that was removed in commit.
-#
-
-#
 # Changeset: modifications to a specific file in a specific revision.
 #
 # Includes:
@@ -70,14 +56,36 @@ def output_from_command(cmd)
   `#{cmd}`
 end
 
+def show_help_and_exit
+  puts "Params: path-to-git-repo [input_file]"
+  puts
+  puts 'Input file format. Each line should have the following format:'
+  puts
+  puts 'hash,date'
+  puts
+  puts 'where hash is the commit hash, and date is creation date of the bug fixed by the commit'
+  puts
+  puts 'Output:'
+  puts
+  puts 'commit,inducing-commit'
+  puts
+  puts 'Where inducing-commit is a commit that added a line to a file that was removed in commit.'
+  puts
+  exit 1
+end
+
 if __FILE__ == $0
 
+  if ARGV.size < 1
+    show_help_and_exit
+  end
+
+  gitrepo_path = ARGV.shift
+
   input = ARGF.read.split("\n").map { |l| l.chomp.split(',') }
-  #input = IO.readlines('../data/bugfix-commits.csv').map { |l| l.chomp.split(',') }
-  # input = ['60bc1be1265063d987c22be0adb91d86f49ae01f,2013-12-09 19:22:00'].map { |l| l.chomp.split(',') }
 
   puts "commit,inducing"
-  FileUtils.chdir '/Users/rodrigorgs/Desktop/eclipse.jdt.debug'
+  FileUtils.chdir gitrepo_path
   input.each do |input_data|
     rev = input_data[0]
     bug_creation = DateTime.parse(input_data[1])
