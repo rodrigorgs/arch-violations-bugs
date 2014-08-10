@@ -1,3 +1,5 @@
+library(dplyr)
+
 releases <- read.csv("../data/eclipse-releases.csv", stringsAsFactors=F)
 
 releases$release <- as.numeric(releases$release)
