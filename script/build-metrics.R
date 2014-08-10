@@ -1,13 +1,13 @@
 rm(list=ls())
 source('../lib/summarise_grouped_metrics.R')
 source('../lib/na.R')
-library(reshape)
+library(reshape2)
 library(dplyr)
 library(sqldf)
 
 ###########
 
-commits <- readRDS("../data/commit-log.rds")
+commits <- readRDS("../data/commits-with-releases.rds")
 changed.klasses <- readRDS("../data/changed-klasses.rds")
 releases <- readRDS("../data/eclipse-releases.rds")
 violations <- readRDS("../data/violations.rds")
@@ -19,26 +19,11 @@ violations <- subset(violations, violtype != "---")
 
 ###########
 
-#' # Map commits to releases: commit => (commit, release)
-
-# Option 1: via bug report
-commits$bug <- as.integer(commits$bug)
-
-commits.with.release <- commits %.%
-	inner_join(bugs) %.%
-	inner_join(releases, by="version") %.%
-	select(commit, bug, reopened, release)
-
-## Option 2: via commit time
-# commits.with.release <- sqldf("select * from commits left join releases where time between initial_time and final_time")
-
-head(commits.with.release, 2)
-
-###########
+commits %.% inner_join(changed.klasses) %.% head()
 
 #' # Count bugs per (klass, release)
 
-bug.count <- commits.with.release %.%
+bug.count <- commits %.%
 	inner_join(changed.klasses) %.%
 	group_by(klass, release) %.%
 	summarise(bugs = n_distinct(bug),
@@ -56,7 +41,7 @@ v <- violations
 v$description <- NULL
 violations.split.by.endpoint <- melt(v, id=c("violation", "violtype")) %.%
 	arrange(violation) %.%
-	rename(c("variable" = "endpoint", "value" = "klass"))
+	reshape::rename(c("variable" = "endpoint", "value" = "klass"))
 violations.split.by.endpoint$klass <- as.character(violations.split.by.endpoint$klass)
 
 head(violations.split.by.endpoint, 6)
