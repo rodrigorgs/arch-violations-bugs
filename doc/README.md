@@ -1,1 +1,1 @@
-Documentation.
+Auto-generated documentation.
