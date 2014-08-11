@@ -1,7 +1,10 @@
-all: data/bugfix-commits.csv data/bugs-extended.rds data/bugs.rds data/changed-files.rds data/changed-klasses.rds data/commit-log.rds data/commits-with-releases.rds data/eclipse-releases.csv data/eclipse-releases.rds data/klass-files.rds data/klass-major-metrics.rds data/klass-metrics.rds data/klass-release-metrics.rds data/klasses.txt data/klassloc.rds data/metrics.rds data/viol-klasses.tsv data/viol-releases.rds data/violations.rds data/violtypes.txt raw-data/fileloc.rds raw-data/fix-inducing-commits.rds report/analyze-correlation-bugs.html report/analyze-target-hierviol.html report/build-metrics.html report/compute-klassloc.html report/correlation.html report/count-loc.html report/export-bugfix-commits.html report/extra-bug-reports.html report/find-all-bug-inducing-commits.html report/find-files.html report/map-bug-reports.html report/map-changed-classes.html report/map-classes-to-files.html report/map-commits-releases.html report/parse-extra-bugs.html report/parse-git-log.html report/parse-release-dates.html report/parse-violfile.html report/reopening.html report/timeseries.html
+all: data/bugfix-commits.csv data/bugs-extended.rds data/bugs.rds data/changed-files.rds data/changed-klasses.rds data/commit-log.rds data/commits-with-releases.rds data/eclipse-releases.csv data/eclipse-releases.rds data/klass-files.rds data/klass-major-metrics.rds data/klass-metrics.rds data/klass-release-metrics.rds data/klasses.txt data/klassloc.rds data/metrics.rds data/viol-klasses.tsv data/viol-releases.rds data/violations.rds data/violtypes.txt raw-data/fileloc.rds raw-data/fix-inducing-commits.rds report/abc.html report/analyze-correlation-bugs.html report/analyze-target-hierviol.html report/build-metrics.html report/compute-klassloc.html report/correlation.html report/count-loc.html report/export-bugfix-commits.html report/extra-bug-reports.html report/find-all-bug-inducing-commits.html report/find-files.html report/map-bug-reports.html report/map-changed-classes.html report/map-classes-to-files.html report/map-commits-releases.html report/parse-extra-bugs.html report/parse-git-log.html report/parse-release-dates.html report/parse-violfile.html report/reopening.html report/timeseries.html
 
 clean:
-	rm -f data/bugfix-commits.csv data/bugs-extended.rds data/bugs.rds data/changed-files.rds data/changed-klasses.rds data/commit-log.rds data/commits-with-releases.rds data/eclipse-releases.csv data/eclipse-releases.rds data/klass-files.rds data/klass-major-metrics.rds data/klass-metrics.rds data/klass-release-metrics.rds data/klasses.txt data/klassloc.rds data/metrics.rds data/viol-klasses.tsv data/viol-releases.rds data/violations.rds data/violtypes.txt raw-data/fileloc.rds raw-data/fix-inducing-commits.rds report/analyze-correlation-bugs.html report/analyze-target-hierviol.html report/build-metrics.html report/compute-klassloc.html report/correlation.html report/count-loc.html report/export-bugfix-commits.html report/extra-bug-reports.html report/find-all-bug-inducing-commits.html report/find-files.html report/map-bug-reports.html report/map-changed-classes.html report/map-classes-to-files.html report/map-commits-releases.html report/parse-extra-bugs.html report/parse-git-log.html report/parse-release-dates.html report/parse-violfile.html report/reopening.html report/timeseries.html
+	rm -f data/bugfix-commits.csv data/bugs-extended.rds data/bugs.rds data/changed-files.rds data/changed-klasses.rds data/commit-log.rds data/commits-with-releases.rds data/eclipse-releases.csv data/eclipse-releases.rds data/klass-files.rds data/klass-major-metrics.rds data/klass-metrics.rds data/klass-release-metrics.rds data/klasses.txt data/klassloc.rds data/metrics.rds data/viol-klasses.tsv data/viol-releases.rds data/violations.rds data/violtypes.txt raw-data/fileloc.rds raw-data/fix-inducing-commits.rds report/abc.html report/analyze-correlation-bugs.html report/analyze-target-hierviol.html report/build-metrics.html report/compute-klassloc.html report/correlation.html report/count-loc.html report/export-bugfix-commits.html report/extra-bug-reports.html report/find-all-bug-inducing-commits.html report/find-files.html report/map-bug-reports.html report/map-changed-classes.html report/map-classes-to-files.html report/map-commits-releases.html report/parse-extra-bugs.html report/parse-git-log.html report/parse-release-dates.html report/parse-violfile.html report/reopening.html report/timeseries.html
+
+report/abc.html: raw-data/fix-inducing-commits.rds data/bugfix-commits.csv data/commit-log.rds script/abc.R
+	./run-script.rb script/abc.R
 
 report/analyze-correlation-bugs.html: data/metrics.rds script/analyze-correlation-bugs.R
 	./run-script.rb script/analyze-correlation-bugs.R
@@ -87,13 +90,13 @@ data/bugs-extended.rds: raw-data/extra-bugs-reopened.grep raw-data/extra-bugs-ve
 report/parse-extra-bugs.html: raw-data/extra-bugs-reopened.grep raw-data/extra-bugs-versions.grep raw-data/extra-bugs-creation.grep data/bugs.rds script/parse-extra-bugs.R
 	./run-script.rb script/parse-extra-bugs.R
 
-data/commit-log.rds:  script/parse-git-log.R
+data/commit-log.rds: raw-data/gitrepos.csv script/parse-git-log.R
 	./run-script.rb script/parse-git-log.R
 
-data/changed-files.rds:  script/parse-git-log.R
+data/changed-files.rds: raw-data/gitrepos.csv script/parse-git-log.R
 	./run-script.rb script/parse-git-log.R
 
-report/parse-git-log.html:  script/parse-git-log.R
+report/parse-git-log.html: raw-data/gitrepos.csv script/parse-git-log.R
 	./run-script.rb script/parse-git-log.R
 
 data/eclipse-releases.rds: data/eclipse-releases.csv script/parse-release-dates.R
