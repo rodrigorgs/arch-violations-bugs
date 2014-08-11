@@ -2,6 +2,7 @@
 
 #- echo=F, results='hide', warning=F, error=F, message=F
 rm(list=ls())
+source('../lib/unload-packages.R')
 
 source('../lib/rcharts-workaround.R', chdir=T)
 library(dplyr)

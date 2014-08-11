@@ -1,3 +1,6 @@
+rm(list=ls())
+source('../lib/unload-packages.R')
+
 changed.files <- readRDS("../data/changed-files.rds")
 all.klasses <- readLines("../data/klasses.txt")
 

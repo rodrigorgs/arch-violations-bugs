@@ -1,3 +1,6 @@
+rm(list=ls())
+source('../lib/unload-packages.R')
+
 #- echo=F, results='hide', warning=F, error=F, message=F
 library(vioplot)
 #- echo=T, results='markup', warning=T, error=T, message=T

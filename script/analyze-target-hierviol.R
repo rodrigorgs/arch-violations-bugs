@@ -1,4 +1,5 @@
 rm(list=ls())
+source('../lib/unload-packages.R')
 library(dplyr)
 
 #' Which bugs/klasses are target of hierarchy violations? which of these were reopened, which were not?

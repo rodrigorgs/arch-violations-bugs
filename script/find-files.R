@@ -1,3 +1,5 @@
+rm(list=ls())
+source('../lib/unload-packages.R')
 library(yaml)
 
 klasses <- readLines("../data/klasses.txt")

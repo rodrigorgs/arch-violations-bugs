@@ -1,4 +1,5 @@
 rm(list=ls())
+source('../lib/unload-packages.R')
 library(yaml)
 
 bugfixes <- read.table("../data/bugfix-commits.csv", header=F, sep=",", quote="", col.names=c("commit", "bug_creation"))

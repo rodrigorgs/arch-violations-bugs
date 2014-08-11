@@ -1,3 +1,6 @@
+rm(list=ls())
+source('../lib/unload-packages.R')
+
 library(stringr)
 library(dplyr)
 library(reshape)

@@ -1,6 +1,7 @@
-library(stringr)
-
+rm(list=ls())
+source('../lib/unload-packages.R')
 source("../lib/gitparser.R")
+library(stringr)
 
 # input: log-eclipse-platform.txt.gz
 

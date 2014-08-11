@@ -1,3 +1,6 @@
+rm(list=ls())
+source('../lib/unload-packages.R')
+
 bugs <- readRDS("../data/bugs.rds")
 commits <- readRDS("../data/commit-log.rds")
 commits$bug <- as.integer(commits$bug)

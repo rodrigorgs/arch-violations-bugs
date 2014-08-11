@@ -1,4 +1,5 @@
 rm(list=ls())
+source('../lib/unload-packages.R')
 
 library(DBI)
 library(RMySQL)

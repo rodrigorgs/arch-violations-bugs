@@ -21,6 +21,9 @@
 # $ grep "<creation_ts>.*</creation_ts>" bug-* > extra-bugs-creation.grep
 #
 
+rm(list=ls())
+source('../lib/unload-packages.R')
+
 library(stringr)
 library(dplyr)
 

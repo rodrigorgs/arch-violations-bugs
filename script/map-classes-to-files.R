@@ -1,3 +1,6 @@
+rm(list=ls())
+source('../lib/unload-packages.R')
+
 files <- readLines("../raw-data/files.txt")
 klasses <- readLines("../data/klasses.txt")
 

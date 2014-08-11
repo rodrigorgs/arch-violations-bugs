@@ -1,3 +1,5 @@
+rm(list=ls())
+source('../lib/unload-packages.R')
 library(dplyr)
 
 releases <- read.csv("../data/eclipse-releases.csv", stringsAsFactors=F)
