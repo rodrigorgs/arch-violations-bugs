@@ -1,0 +1,27 @@
+Package: archviol
+Maintainer: Rodrigo Souza <rodrigorgs@gmail.com>
+Author: Rodrigo Souza <rodrigorgs@gmail.com>
+Version: 0.1
+License: GPL-3
+Title: Architectural violations vs. bugs
+Description:
+  ...
+Depends:
+  yaml (>= 2.1.10),
+  stringr (>= 0.6.2),
+  RSQLite (>= 0.11.4),
+  proto (>= 0.3-10),
+  reshape (>= 0.8.4),
+  ggplot2 (>= 0.9.3.1),
+  vioplot (>= 0.2),
+  sqldf (>= 0.4-6.4),
+  chron (>= 2.3-45),
+  RMySQL (>= 0.9-3),
+  rCharts (>= 0.4.2),
+  dplyr (>= 0.1.3),
+  sm (>= 2.2-5.3),
+  RSQLite.extfuns (>= 0.0.1),
+  gsubfn (>= 0.6-5),
+  reshape2 (>= 1.2.2),
+  plyr (>= 1.8),
+  DBI (>= 0.2-7)
