@@ -119,7 +119,7 @@ if __FILE__ == $0
       lines = change.lines.map { |i| lines[i-1] }
       lines.each do |line|
         components = line.split("\t")
-        hash = components[0]
+        hash = components[0].strip
         date_str = components[2]
         date = DateTime.parse(date_str)
 
