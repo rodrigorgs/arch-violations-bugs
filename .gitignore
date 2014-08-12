@@ -1,0 +1,16 @@
+.*
+!.gitignore
+
+*.bak
+*.pyc
+
+data/*
+!data/README.md
+
+report/*
+!report/.gitkeep
+
+script/bugzilla_crawler/urls-to-download
+script/figure
+config/*.yml
+doc/*
