@@ -29,6 +29,10 @@ stopifnot(nrow(indcommits) == length(unique(induction$inducing)))
 
 # TODO: read a sample of fix-inducing commits that change classes involved in violations and the corresponding bug reports and their git blame.
 
+# type <- "instantiation"
+# endpoint <- "target"
+cases <- NULL
+
 for (type in unique(violations$violtype)) {
 	for (endpoint in c("source", "target")) {
 		v <- violations[violations$violtype == type, endpoint]
@@ -48,12 +52,32 @@ for (type in unique(violations$violtype)) {
 		t <- xtabs(~ touches_violklass + inducing, data=x)
 		print(fisher.test(t)$p.value)
 		png(paste0("../report/abc-", endpoint, "-", type, ".png"))
-		mosaicplot(t, main=paste(endpoint, type, fisher.test(t)$p.value < 0.05)))
+		mosaicplot(t, main=paste(endpoint, type, fisher.test(t)$p.value < 0.05))
 		dev.off()
+
+		# Collect cases for further analysis
+		y <- x %.%
+			filter(touches_violklass & inducing) %.%
+			select(inducing = hash, message, gitrepo, time) %.%
+			inner_join(induction) %.%
+			select(gitrepo,
+				inducing, indmessage = message, indtime = time, hash = commit) %.%
+			inner_join(commits) %.%
+			mutate(endpoint = endpoint, type = type) %.%
+			select(endpoint, type,
+				gitrepo, inducing, indmessage, indtime,
+				fix = hash, fixmessage = message, fixtime = time,
+				fixedbug = bug)
+			
+		cases <- rbind(cases, y)
 	}
 }
 
+write.csv(cases, "../data/inducing-cases.csv")
+
 # Yes! Commits that touch klasses that are eventually involved in violations are more likely to contain bugs.
+
+#' However, bugs may not be actual bugs (they may be refactoring requests, for example, or even changes in the licensing comments in the header of each source file)
 
 # TODO: reopening
 
