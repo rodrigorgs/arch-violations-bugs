@@ -26,6 +26,12 @@ for (repo in gitrepos$gitrepo) {
 	cmd <- paste0("./find-bug-inducing-commits.rb ", path.to.repo, " ../data/bugfix-commits.csv")
 	output.lines <- system(cmd, intern=T, show.output.on.console=T)
 
+	# Write output to temp file
+	fileConn<-file("output.txt")
+	writeLines(output.lines, paste0("/tmp/", repo))
+	close(fileConn)
+
+	# Read output into a data.frame
 	con <- textConnection(paste(output.lines, "\n"))
 	data <- read.table(con, sep=",", header=T, stringsAsFactors=F, strip.white=TRUE)
 	close(con)

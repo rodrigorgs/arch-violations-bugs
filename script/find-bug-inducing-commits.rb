@@ -109,6 +109,8 @@ if __FILE__ == $0
       # -c: Use the same output mode as git-annotate
 
       out = output_from_command(%Q[git blame --date=iso8601 -clwMC #{rev}^ -- "#{change.file}"])
+      puts "from #{gitrepo_path}"
+      puts out
       if (out.empty?)
         STDERR.puts "No output for commit #{rev} (blame). Skipping..."
         next
