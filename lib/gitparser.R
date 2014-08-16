@@ -20,13 +20,14 @@ parse_commit_metadata <- function(lines) {
 	message <- substring(info, 80)
 	bug <- str_match(tolower(message), "\\b[0-9]{5,6}\\b")[, 1]
 
-	commit.log <- data.frame(commit=seq(info), hash, time, bug, message, stringsAsFactors=F)
+	commit.log <- data.frame(commit=hash, time, bug, message, stringsAsFactors=F)
 
-	commit.log
+	invisible(commit.log)
 }
 
 parse_commit_files <- function(lines) {
 	commit.idx <- grep("^commit", lines)
+	hash <- substring(lines[commit.idx], 9, 48)
 
 	# index of first and last lines that contain the list of files changed, per commit
 	first <- commit.idx + 1
@@ -40,11 +41,11 @@ parse_commit_files <- function(lines) {
 	# indices of lines that contain the list of files changed
 	idx <- unlist(apply(filelist.idx, 1, function(x) x["first"]:x["last"]))
 
-	commit <- rep(filelist.idx$id, filelist.idx$size)
+	commit <- rep(hash[filelist.idx$id], filelist.idx$size)
 	file <- lines[idx]
 	file <- str_match(file, "^ (.+?) +\\|")[, 2]
 
 	changed.files <- data.frame(commit, file, stringsAsFactors=F)
 
-	changed.files
+	invisible(changed.files)
 }

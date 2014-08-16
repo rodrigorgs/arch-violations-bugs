@@ -120,6 +120,7 @@ if __FILE__ == $0
       lines.each do |line|
         components = line.split("\t")
         hash = components[0].strip
+        p hash
         date_str = components[2]
         date = DateTime.parse(date_str)
 

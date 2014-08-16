@@ -29,6 +29,10 @@ for (repo in repositories$gitrepo) {
 	changed.files <- rbind(changed.files, y)
 }
 
+if (any(duplicated(commit.log$commit))) {
+	stop("Duplicated values in commit!")
+}
+
 #############
 
 saveRDS(commit.log, "../data/commit-log.rds")

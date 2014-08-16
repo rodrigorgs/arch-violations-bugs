@@ -17,7 +17,7 @@ commits$bug <- as.integer(commits$bug)
 
 bugfix.commits <- commits %.%
 	inner_join(bugs, by="bug") %.%
-	select(hash, initial.time)
+	select(commit, initial.time)
 
 stopifnot(sum(is.na(bugfix.commits$initial.time)) == 0)
 
