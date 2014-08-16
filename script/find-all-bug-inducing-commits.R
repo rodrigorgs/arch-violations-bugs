@@ -27,8 +27,8 @@ for (repo in gitrepos$gitrepo) {
 	output.lines <- system(cmd, intern=T, show.output.on.console=T)
 
 	# Write output to temp file
-	fileConn<-file("output.txt")
-	writeLines(output.lines, paste0("/tmp/", repo))
+	fileConn<-file(paste0("/tmp/debug-", repo, ".txt"))
+	writeLines(output.lines, fileConn)
 	close(fileConn)
 
 	# Read output into a data.frame
