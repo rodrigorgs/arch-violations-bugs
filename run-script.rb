@@ -10,28 +10,35 @@ def create_notebook(path)
   oldpwd = FileUtils.pwd
   FileUtils.chdir(dir)
 
-  system %Q[Rscript -e "library(knitr); knitr::spin('#{filename}'); library(markdown); markdownToHTML('#{filename_no_ext}.md', '#{filename_no_ext}.html')"]
+  cmd = %Q[Rscript '#{filename}' | tee '../report/#{filename_no_ext}.html']
+  puts cmd
+  ret = system cmd
 
-  FileUtils.rm "#{filename_no_ext}.md" if File.exist?("#{filename_no_ext}.md")
-  FileUtils.mv "#{filename_no_ext}.html", '../report' if File.exist?("#{filename_no_ext}.html") && File.directory?("../report")
+  # FileUtils.rm "#{filename_no_ext}.md" if File.exist?("#{filename_no_ext}.md")
+  # FileUtils.mv "#{filename_no_ext}.html", '../report' if File.exist?("#{filename_no_ext}.html") && File.directory?("../report")
 
-  # # Fix rCharts bug
+  # # Fix rCharts bugw
   # sed -i ".bak" -e 's/\\\\n/\\n/g' figure/*.html
   # rm figure/*.bak
 
   FileUtils.chdir(oldpwd)
+
+  ret
 end
 
 def execute_script(basename, script_dir)
+  ret = nil
   if basename =~ /\.[Rr]$/
-    create_notebook basename
+    ret = create_notebook basename
   elsif basename =~ /\.rb$/
     txt = basename.gsub(/\.rb$/, '.txt')
-    system "ruby #{basename} > ../report/#{txt}"
+    ret = system "ruby #{basename} > ../report/#{txt}"
   end
+  ret
 end
 
 def force_run(path)
+  ret = nil
   basename = File.basename(path)
   dirname = File.dirname(path)
   script_dir = File.expand_path(File.dirname(__FILE__))
@@ -40,7 +47,7 @@ def force_run(path)
   FileUtils.chdir(dirname)
   puts "*** Running script #{basename}..."
   begin
-    execute_script(basename, script_dir)
+    ret = execute_script(basename, script_dir)
   ensure
     FileUtils.chdir(pwd)
   end
@@ -48,5 +55,6 @@ end
 
 if __FILE__ == $0
   path = ARGV[0]
-  force_run(path)
+  ret = force_run(path)
+  exit ret ? 0 : 1
 end

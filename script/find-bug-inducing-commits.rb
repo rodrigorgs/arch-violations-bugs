@@ -84,6 +84,9 @@ if __FILE__ == $0
 
   input = ARGF.read.split("\n").map { |l| l.chomp.split(',') }
 
+  f = File.open(
+    "/tmp/debug-#{File.basename(gitrepo_path)}.txt", "w")
+
   puts "commit,inducing"
   FileUtils.chdir gitrepo_path
   input.each do |input_data|
@@ -132,11 +135,14 @@ if __FILE__ == $0
     changes.each do |change|
       change.inducing_changes.each do |inducing|
         puts "#{change.rev},#{inducing}"
+        f.puts "#{change.rev},#{inducing}"
       end      
     end
 
     # p changes
     # puts "\n-------------------------------\n\n"
   end
+
+  f.close
 
 end

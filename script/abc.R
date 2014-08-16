@@ -1,5 +1,9 @@
 #' Are commits that touch classes that are eventually involved in architectural violations more likely to induce bugfixes?
 
+# TODO: ignore commits with more than X changed files. These represent global changes such as modifying headers, migrating code to a new Java version etc.
+
+# TODO: record which classes violate architecture
+
 rm(list=ls())
 source('../lib/unload-packages.R')
 source('../lib/gitparser.R')
@@ -20,7 +24,7 @@ head(bugs)
 
 # # Find commits that induced bugs
 
-indcommits <- subset(commits, hash %in% induction$inducing)
+indcommits <- subset(commits, commit %in% induction$inducing)
 nrow(indcommits)
 stopifnot(nrow(indcommits) == length(unique(induction$inducing)))
 
@@ -58,15 +62,15 @@ for (type in unique(violations$violtype)) {
 		# Collect cases for further analysis
 		y <- x %.%
 			filter(touches_violklass & inducing) %.%
-			select(inducing = hash, message, gitrepo, time) %.%
+			select(inducing = commit, message, gitrepo, time) %.%
 			inner_join(induction) %.%
 			select(gitrepo,
-				inducing, indmessage = message, indtime = time, hash = commit) %.%
+				inducing, indmessage = message, indtime = time, commit) %.%
 			inner_join(commits) %.%
 			mutate(endpoint = endpoint, type = type) %.%
 			select(endpoint, type,
 				gitrepo, inducing, indmessage, indtime,
-				fix = hash, fixmessage = message, fixtime = time,
+				fix = commit, fixmessage = message, fixtime = time,
 				fixedbug = bug)
 			
 		cases <- rbind(cases, y)
@@ -85,11 +89,11 @@ commits$bug <- as.integer(commits$bug)
 
 # induction => commits => bugs => @reopened
 mega <- induction %.%
-	select(hash = commit, inducing) %.%
-	inner_join(commits, by="hash") %.%
-	select(bugfixcommit = commit, bugfixhash = hash, hash = inducing, bugfixbug = bug) %.%
-	inner_join(commits, by="hash") %.%
-	select(bugfixcommit, bugfixhash, bug = bugfixbug, indcommit = commit, indhash = hash) %.%
+	select(inducing) %.%
+	inner_join(commits, by="commit") %.%
+	select(bugfixcommit = commit, bugfixhash = commit, commit = inducing, bugfixbug = bug) %.%
+	inner_join(commits, by="commit") %.%
+	select(bugfixcommit, bugfixhash, bug = bugfixbug, indcommit = commit, indhash = commit) %.%
 	inner_join(bugs, by="bug") %.%
 	select(bugfixcommit, bugfixhash, bug, indcommit, indhash, reopened)
 
