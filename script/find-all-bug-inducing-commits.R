@@ -27,7 +27,7 @@ for (repo in gitrepos$gitrepo) {
 	output.lines <- system(cmd, intern=T, show.output.on.console=T)
 
 	con <- textConnection(paste(output.lines, "\n"))
-	data <- read.table(con, sep=",", header=T, stringsAsFactors=F)
+	data <- read.table(con, sep=",", header=T, stringsAsFactors=F, strip.white=TRUE)
 	close(con)
 
 	data$gitrepo <- repo

@@ -132,7 +132,7 @@ if __FILE__ == $0
 
     changes.each do |change|
       change.inducing_changes.each do |inducing|
-        puts "#{change.rev},#{inducing}"
+        puts "#{change.rev.strip},#{inducing.strip}"
       end      
     end
 
