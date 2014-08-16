@@ -1,5 +1,9 @@
 #' Are commits that touch classes that are eventually involved in architectural violations more likely to induce bugfixes?
 
+# TODO: ignore commits with more than X changed files. These represent global changes such as modifying headers, migrating code to a new Java version etc.
+
+# TODO: record which classes violate architecture
+
 rm(list=ls())
 source('../lib/unload-packages.R')
 source('../lib/gitparser.R')
@@ -61,7 +65,7 @@ for (type in unique(violations$violtype)) {
 			select(inducing = commit, message, gitrepo, time) %.%
 			inner_join(induction) %.%
 			select(gitrepo,
-				inducing, indmessage = message, indtime = time) %.%
+				inducing, indmessage = message, indtime = time, commit) %.%
 			inner_join(commits) %.%
 			mutate(endpoint = endpoint, type = type) %.%
 			select(endpoint, type,
