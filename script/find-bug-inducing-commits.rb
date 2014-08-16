@@ -85,7 +85,7 @@ if __FILE__ == $0
   input = ARGF.read.split("\n").map { |l| l.chomp.split(',') }
 
   f = File.open(
-    "/tmp/debug-#{gitrepo_path}.txt", "w")
+    "/tmp/debug-#{File.basename(gitrepo_path)}.txt", "w")
 
   puts "commit,inducing"
   FileUtils.chdir gitrepo_path
@@ -144,6 +144,6 @@ if __FILE__ == $0
     # puts "\n-------------------------------\n\n"
   end
 
-  fclose(f)
+  f.close
 
 end
