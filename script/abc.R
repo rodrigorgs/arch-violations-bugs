@@ -1,8 +1,6 @@
 #' Are commits that touch classes that are eventually involved in architectural violations more likely to induce bugfixes?
 
-# TODO: ignore commits with more than X changed files. These represent global changes such as modifying headers, migrating code to a new Java version etc.
-
-# TODO: record which classes violate architecture
+# TODO: select only commits in the period for which we have violation reports, so we can determine if commit touched a class that violated architecture when the commit was performed.
 
 rm(list=ls())
 source('../lib/unload-packages.R')
@@ -28,10 +26,27 @@ indcommits <- subset(commits, commit %in% induction$inducing)
 nrow(indcommits)
 stopifnot(nrow(indcommits) == length(unique(induction$inducing)))
 
-# # Determine, for each commit, if it touched a klass that eventually
-# violated the architecture.
+remove.packages <- function(s) {
+	gsub(".*[.]", "", s)
+}
 
-# TODO: read a sample of fix-inducing commits that change classes involved in violations and the corresponding bug reports and their git blame.
+# Provide additional info about commits identified by `hashes`.
+# violklasses is a list of klasses that are involved in architectural violations.
+detail.commits <- function(hashes, violklasses) {
+	a <- changed.klasses %>%
+		filter(commit %in% hashes) %>%
+		mutate(violate = klass %in% violklasses) %>%
+		group_by(commit) %>%
+		summarise(
+			nklasses = n(),
+			nviolklasses = sum(violate),
+			nameviolklasses = paste(remove.packages(klass[violate]), collapse=" ")) %>%
+		inner_join(commits) %>%
+		select(gitrepo, time, commit,
+			message, bug,
+			nklasses, nviolklasses, nameviolklasses)
+	a
+}
 
 # type <- "instantiation"
 # endpoint <- "target"
@@ -44,7 +59,8 @@ for (type in unique(violations$violtype)) {
 
 		commit_violation <- changed.klasses %.%
 			group_by(commit) %.%
-			summarise(touches_violklass = any(touches_violklass))
+			summarise(touches_violklass = any(touches_violklass),
+				nclasses = n())
 
 		###
 
@@ -60,18 +76,25 @@ for (type in unique(violations$violtype)) {
 		dev.off()
 
 		# Collect cases for further analysis
-		y <- x %.%
-			filter(touches_violklass & inducing) %.%
-			select(inducing = commit, message, gitrepo, time) %.%
-			inner_join(induction) %.%
-			select(gitrepo,
-				inducing, indmessage = message, indtime = time, commit) %.%
-			inner_join(commits) %.%
-			mutate(endpoint = endpoint, type = type) %.%
-			select(endpoint, type,
-				gitrepo, inducing, indmessage, indtime,
-				fix = commit, fixmessage = message, fixtime = time,
-				fixedbug = bug)
+		a <- detail.commits(induction$inducing, v)
+		names(a) <- paste0("A_", names(a))
+		b <- detail.commits(induction$commit, v)
+		names(b) <- paste0("B_", names(b))
+
+		y <- induction %>%
+			select(A_commit = inducing, B_commit = commit) %>%
+			inner_join(a) %>%
+			inner_join(b) %>%
+			mutate(violtype = type, violendpoint = endpoint) %>%
+			select(
+				violtype, violendpoint,
+				A_gitrepo, A_time, A_commit,
+				A_message, A_bug,
+				A_nklasses, A_nviolklasses, A_nameviolklasses,
+				B_gitrepo, B_time, B_commit,
+				B_message, B_bug,
+				B_nklasses, B_nviolklasses, B_nameviolklasses) %>%
+			filter(A_nviolklasses > 0)
 			
 		cases <- rbind(cases, y)
 	}
